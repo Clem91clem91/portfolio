@@ -1,221 +1,1076 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio - Architecte / Concepteur BIM</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clément El Hadri — BIM Manager & Technical Strategist</title>
+  <meta name="description" content="Portfolio de Clément El Hadri, BIM Manager & Technical Strategist : stratégie BIM, automatisation, coordination technique et visualisation de projets." />
+  <style>
+    :root {
+      --bg: #0f1115;
+      --bg-soft: #171a21;
+      --panel: rgba(255,255,255,0.04);
+      --line: rgba(255,255,255,0.09);
+      --text: #f5f7fb;
+      --muted: #b5bdcc;
+      --accent: #9bb3ff;
+      --accent-strong: #dbe3ff;
+      --shadow: 0 20px 50px rgba(0,0,0,0.25);
+      --radius: 22px;
+      --radius-sm: 14px;
+      --max: 1180px;
+    }
 
-<style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-body{
-font-family: Arial, sans-serif;
-margin:0;
-background:#0f1115;
-color:white;
-line-height:1.6;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-header{
-padding:20px;
-border-bottom:1px solid rgba(255,255,255,0.1);
-position:sticky;
-top:0;
-background:#0f1115;
-}
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(155,179,255,0.14), transparent 28%),
+        radial-gradient(circle at right 20%, rgba(255,255,255,0.06), transparent 18%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
 
-nav{
-display:flex;
-justify-content:space-between;
-max-width:1100px;
-margin:auto;
-}
+    img {
+      max-width: 100%;
+      display: block;
+    }
 
-nav a{
-color:#b5bdcc;
-text-decoration:none;
-margin-left:20px;
-}
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-section{
-max-width:1100px;
-margin:auto;
-padding:60px 20px;
-}
+    .container {
+      width: min(calc(100% - 32px), var(--max));
+      margin: 0 auto;
+    }
 
-.hero{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-align-items:center;
-}
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.04);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
 
-.hero h1{
-font-size:48px;
-margin-bottom:20px;
-}
+    .tag::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 0 6px rgba(155,179,255,0.12);
+    }
 
-.hero p{
-color:#b5bdcc;
-}
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(18px);
+      background: rgba(15,17,21,0.68);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
 
-.button{
-display:inline-block;
-padding:12px 20px;
-margin-top:20px;
-background:white;
-color:black;
-border-radius:30px;
-text-decoration:none;
-}
+    .nav {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
 
-.projects{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:30px;
-}
+    .brand {
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
 
-.card{
-background:#171a21;
-padding:20px;
-border-radius:12px;
-}
+    .brand span {
+      color: var(--muted);
+      font-weight: 500;
+      margin-left: 8px;
+    }
 
-.skills{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:20px;
-}
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
 
-footer{
-text-align:center;
-padding:40px;
-border-top:1px solid rgba(255,255,255,0.1);
-color:#b5bdcc;
-}
+    nav a {
+      color: var(--muted);
+      font-size: 0.95rem;
+      transition: 0.25s ease;
+    }
 
-</style>
+    nav a:hover,
+    nav a:focus {
+      color: var(--text);
+    }
+
+    .hero {
+      padding: 92px 0 70px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.12fr 0.88fr;
+      gap: 34px;
+      align-items: stretch;
+    }
+
+    .hero-copy,
+    .hero-card,
+    .about-card,
+    .project-card,
+    .skill-card,
+    .contact-card,
+    .footer-card,
+    .value-card,
+    .software-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-copy {
+      padding: 42px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 560px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.8rem, 5vw, 5.1rem);
+      line-height: 0.95;
+      letter-spacing: -0.05em;
+      margin: 18px 0 20px;
+      max-width: 10ch;
+    }
+
+    .hero h1 span {
+      color: var(--accent-strong);
+    }
+
+    .lead {
+      color: var(--muted);
+      max-width: 58ch;
+      font-size: 1.07rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 34px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 20px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
+      font-weight: 600;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: var(--text);
+      color: #101216;
+      border-color: transparent;
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,0.04);
+      color: var(--text);
+    }
+
+    .hero-meta {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 42px;
+    }
+
+    .stat {
+      padding: 18px;
+      border-radius: var(--radius-sm);
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.2rem;
+      margin-bottom: 6px;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .hero-card {
+      overflow: hidden;
+      position: relative;
+      min-height: 560px;
+    }
+
+    .hero-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.92;
+    }
+
+    .hero-card .overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(15,17,21,0.08), rgba(15,17,21,0.78));
+      display: flex;
+      align-items: end;
+      padding: 28px;
+    }
+
+    .overlay-box {
+      padding: 20px;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(12,14,18,0.58);
+      backdrop-filter: blur(10px);
+      max-width: 390px;
+    }
+
+    .overlay-box p {
+      color: var(--muted);
+      margin-top: 8px;
+      font-size: 0.96rem;
+    }
+
+    section {
+      padding: 38px 0;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 22px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(1.9rem, 3vw, 3rem);
+      letter-spacing: -0.04em;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      max-width: 64ch;
+    }
+
+    .about-card,
+    .contact-card,
+    .footer-card,
+    .value-card,
+    .software-card {
+      padding: 34px;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .about-card p + p {
+      margin-top: 14px;
+    }
+
+    .about-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .about-item,
+    .value-item,
+    .software-block {
+      padding: 18px 20px;
+      border-radius: var(--radius-sm);
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .about-item strong,
+    .value-item strong,
+    .software-block strong {
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .about-item span,
+    .value-item p,
+    .software-block p,
+    .software-block li {
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .value-grid,
+    .software-grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .software-columns {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .skill-groups {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .skill-groups ul {
+      padding-left: 18px;
+      margin-top: 10px;
+    }
+
+    .skill-groups li + li {
+      margin-top: 8px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .project-card {
+      overflow: hidden;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(155,179,255,0.22);
+    }
+
+    .project-media {
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+      background: linear-gradient(135deg, rgba(155,179,255,0.18), rgba(255,255,255,0.04));
+      display: grid;
+      place-items: center;
+      font-size: 3rem;
+    }
+
+    .project-body {
+      padding: 24px;
+    }
+
+    .project-top {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+
+    .project-top h3 {
+      font-size: 1.25rem;
+      line-height: 1.2;
+    }
+
+    .project-body p {
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .chip {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.06);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .skill-card {
+      padding: 24px;
+    }
+
+    .skill-card h3 {
+      margin-bottom: 10px;
+      font-size: 1.12rem;
+    }
+
+    .skill-card p {
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .contact-card p,
+    .footer-card p {
+      color: var(--muted);
+    }
+
+    .contact-links {
+      display: grid;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .contact-link {
+      padding: 16px 18px;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(255,255,255,0.06);
+      background: rgba(255,255,255,0.03);
+      transition: 0.25s ease;
+    }
+
+    .contact-link:hover {
+      background: rgba(255,255,255,0.05);
+      transform: translateY(-2px);
+    }
+
+    .contact-link small {
+      display: block;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    footer {
+      padding: 10px 0 38px;
+    }
+
+    .footer-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .footer-card strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    @media (max-width: 1024px) {
+      .hero-grid,
+      .about-grid,
+      .contact-grid,
+      .projects-grid,
+      .skills-grid,
+      .software-columns,
+      .skill-groups {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-copy,
+      .hero-card {
+        min-height: auto;
+      }
+
+      .hero-card {
+        min-height: 360px;
+      }
+    }
+
+    @media (max-width: 720px) {
+      body {
+        line-height: 1.5;
+      }
+
+      .container {
+        width: min(calc(100% - 20px), var(--max));
+      }
+
+      .nav {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 14px 0;
+        min-height: auto;
+      }
+
+      .brand {
+        margin-bottom: 10px;
+      }
+
+      nav ul {
+        gap: 10px;
+        justify-content: flex-start;
+      }
+
+      nav a {
+        display: inline-flex;
+        padding: 8px 10px;
+        border: 1px solid rgba(255,255,255,0.06);
+        border-radius: 999px;
+        background: rgba(255,255,255,0.03);
+      }
+
+      .hero {
+        padding-top: 38px;
+        padding-bottom: 42px;
+      }
+
+      .hero-copy,
+      .about-card,
+      .contact-card,
+      .footer-card,
+      .value-card,
+      .software-card,
+      .skill-card {
+        padding: 20px;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.2rem, 11vw, 3.2rem);
+        line-height: 1;
+        margin: 16px 0 14px;
+      }
+
+      .lead {
+        font-size: 0.98rem;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .hero-meta {
+        grid-template-columns: 1fr;
+        margin-top: 26px;
+      }
+
+      .hero-card {
+        min-height: 280px;
+      }
+
+      .overlay {
+        padding: 16px !important;
+      }
+
+      .overlay-box {
+        padding: 16px;
+      }
+
+      .section-head {
+        align-items: start;
+        flex-direction: column;
+        margin-bottom: 18px;
+      }
+
+      .section-head h2 {
+        font-size: clamp(1.6rem, 8vw, 2.2rem);
+      }
+
+      .projects-grid,
+      .skills-grid,
+      .software-columns,
+      .skill-groups {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .project-body {
+        padding: 18px;
+      }
+
+      .project-top {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .project-top h3 {
+        font-size: 1.08rem;
+      }
+
+      .chips {
+        gap: 8px;
+      }
+
+      .chip {
+        font-size: 0.84rem;
+        padding: 7px 10px;
+      }
+
+      .about-item,
+      .value-item,
+      .software-block,
+      .contact-link,
+      .stat {
+        padding: 16px;
+      }
+
+      .contact-links {
+        gap: 10px;
+      }
+
+      .footer-card {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .container {
+        width: min(calc(100% - 16px), var(--max));
+      }
+
+      nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      nav a {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .hero-copy,
+      .about-card,
+      .contact-card,
+      .footer-card,
+      .value-card,
+      .software-card,
+      .skill-card {
+        padding: 16px;
+      }
+
+      .hero h1 {
+        font-size: clamp(2rem, 12vw, 2.6rem);
+      }
+
+      .tag {
+        font-size: 0.82rem;
+        padding: 7px 12px;
+      }
+    }
+  </style>
 </head>
-
 <body>
+  <header>
+    <div class="container nav">
+      <a href="#top" class="brand">Clément El Hadri <span>Portfolio</span></a>
+      <nav>
+        <ul>
+          <li><a href="#a-propos">À propos</a></li>
+          <li><a href="#valeur">Valeur ajoutée</a></li>
+          <li><a href="#logiciels">Logiciels</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<header>
-<nav>
-<div><strong>Ton Nom</strong></div>
-<div>
-<a href="#about">À propos</a>
-<a href="#projects">Projets</a>
-<a href="#skills">Compétences</a>
-<a href="#contact">Contact</a>
-</div>
-</nav>
-</header>
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div>
+            <span class="tag">BIM Manager & Technical Strategist</span>
+            <h1>Structurer la donnée pour <span>fluidifier l’exécution.</span></h1>
+            <p class="lead">
+              AI-Driven Architectural Technology Engineer à l’intersection de l’ingénierie structurelle, du BIM et de l’automatisation, je conçois des méthodes, des standards et des workflows intelligents capables de rendre les projets plus lisibles, plus fiables et plus rentables à exécuter.
+            </p>
+            <div class="hero-actions">
+              <a href="#projets" class="btn btn-primary">Voir les projets</a>
+              <a href="#valeur" class="btn btn-secondary">Découvrir ma valeur ajoutée</a>
+            </div>
+          </div>
 
-<section class="hero">
+          <div class="hero-meta">
+            <div class="stat">
+              <strong>5+ ans</strong>
+              <span>Expérience BIM et coordination au sein du groupe Fayat</span>
+            </div>
+            <div class="stat">
+              <strong>BIM</strong>
+              <span>Coordination, standards et exécution</span>
+            </div>
+            <div class="stat">
+              <strong>Python / Dynamo</strong>
+              <span>Automatisation des workflows</span>
+            </div>
+          </div>
+        </div>
 
-<div>
-<h1>Architecte / Concepteur BIM</h1>
+        <div class="hero-card">
+          <img src="Clément El Hadri BIM Manager & Technical Strategis/Gemini_Generated_Image_c2vgi1c2vgi1c2vg.png" alt="Visuel de couverture du portfolio" />
+          <div class="overlay">
+            <div class="overlay-box">
+              <strong>Positionnement</strong>
+              <p>
+                Une approche orientée résolution de problèmes, précision des données et optimisation concrète
+                des processus BIM sur des projets complexes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<p>
-Je conçois et modélise des projets en associant précision technique,
-coordination BIM et représentation claire du projet.
-</p>
+    <section id="a-propos">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>À propos</h2>
+          </div>
+          <p>
+            Une présentation claire du profil, du parcours et de la logique d’intervention : relier stratégie BIM,
+            exécution chantier et qualité des données.
+          </p>
+        </div>
 
-<a class="button" href="#projects">Voir mes projets</a>
+        <div class="about-grid">
+          <div class="about-card">
+            <p>
+              Professionnel du BIM ambitieux et orienté résultats, avec plus de 5 ans d’expérience à l’intersection de la modélisation, de la coordination technique, de l’ingénierie structurelle et des workflows numériques avancés.
+            </p>
+            <p>
+              Mon parcours au sein de Franki Fondation m’a amené à intervenir sur des projets d’envergure tels que l’APHP Saint-Ouen, le Grand Paris Express ou des opérations complexes à Monaco, avec un rôle croissant en coordination BIM, modélisation LOD 400, QA/QC et automatisation.
+            </p>
+            <p>
+              Formé à l’INSA Hauts-de-France en Ingénierie Numérique Collaborative pour la Construction, je développe une approche orientée systèmes : transformer la donnée brute en actifs de construction performants grâce à Revit, Dynamo, Python et une logique forte de standardisation.
+            </p>
+          </div>
 
-</div>
+          <div class="about-list">
+            <div class="about-item">
+              <strong>Position</strong>
+              <span>AI-Driven Architectural Technology Engineer / BIM Manager</span>
+            </div>
+            <div class="about-item">
+              <strong>Terrains de jeu</strong>
+              <span>APHP Saint-Ouen, Monaco High-Rise, Grand Paris Express, LVMH Art et Talents.</span>
+            </div>
+            <div class="about-item">
+              <strong>Approche</strong>
+              <span>Rigueur technique, automatisation Python/Dynamo, standardisation BIM et impact opérationnel.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div>
-<img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2"
-style="width:100%; border-radius:12px;">
-</div>
+    <section id="valeur">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Ma valeur ajoutée</h2>
+          </div>
+          <p>
+            Une lecture stratégique du BIM qui ne s’arrête pas à la modélisation : elle structure les méthodes,
+            sécurise l’exécution et améliore la performance collective.
+          </p>
+        </div>
 
-</section>
+        <div class="value-card">
+          <div class="value-grid">
+            <div class="value-item">
+              <strong>1. Stratégie & Coordination BIM</strong>
+              <p>Gestion de bout en bout des processus BIM, de l’analyse des conventions à l’exécution sur chantier, avec exigence de cohérence technique.</p>
+            </div>
+            <div class="value-item">
+              <strong>2. Automatisation des workflows</strong>
+              <p>Conception de scripts Python, Dynamo et logiques de validation pour supprimer les tâches répétitives, réduire les erreurs et accélérer la production.</p>
+            </div>
+            <div class="value-item">
+              <strong>3. Standardisation & gabarits</strong>
+              <p>Création de bibliothèques d’objets, de gabarits Revit et de chartes graphiques afin d’assurer une qualité constante sur l’ensemble des projets.</p>
+            </div>
+            <div class="value-item">
+              <strong>4. Audit & contrôle qualité</strong>
+              <p>Analyse des maquettes, détection des conflits, contrôle de conformité aux standards BIM et formulation de recommandations exploitables.</p>
+            </div>
+            <div class="value-item">
+              <strong>5. Architecture de la donnée</strong>
+              <p>Structuration des informations, gestion de l’interopérabilité IFC/BCF et fiabilisation des échanges pour garantir la bonne donnée, au bon moment, pour le bon acteur.</p>
+            </div>
+            <div class="value-item">
+              <strong>6. Communication visuelle & engagement</strong>
+              <p>Rendus de synthèse avec UE5 et Blender pour rendre lisibles les enjeux techniques et faciliter la décision auprès de tous les interlocuteurs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section id="about">
+    <section id="logiciels">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Logiciels & connaissances</h2>
+          </div>
+          <p>
+            Un socle technique articulé autour des outils BIM, de l’automatisation, de la bureautique avancée et de la visualisation de projet.
+          </p>
+        </div>
 
-<h2>À propos</h2>
+        <div class="software-card">
+          <div class="software-columns">
+            <div class="software-block">
+              <strong>Technique</strong>
+              <p>Revit (avancé/API), Python, Dynamo, Navisworks, AutoCAD</p>
+            </div>
+            <div class="software-block">
+              <strong>Bureautique</strong>
+              <p>Notion, Suite Microsoft Office, Overleaf / LaTeX</p>
+            </div>
+            <div class="software-block">
+              <strong>Rendu</strong>
+              <p>Blender, Unreal Engine 5</p>
+            </div>
+            <div class="software-block">
+              <strong>Positionnement métier</strong>
+              <p>Gestion BIM, exécution, interopérabilité, structuration des standards et pilotage technique.</p>
+            </div>
+          </div>
 
-<p>
-Présente ici ton parcours, tes études, ton expérience et ta manière de travailler.
-Cette section doit être claire et concise.
-</p>
+          <div class="skill-groups">
+            <div class="software-block">
+              <strong>BIM et construction numérique</strong>
+              <ul>
+                <li>Gestion BIM</li>
+                <li>Plans d’Exécution BIM (BEP)</li>
+                <li>Standardisation BIM</li>
+                <li>Développement de bibliothèques BIM</li>
+                <li>Détection de conflits</li>
+                <li>Structuration des données BIM (IFC / BCF)</li>
+              </ul>
+            </div>
 
-</section>
+            <div class="software-block">
+              <strong>Coordination et workflows BIM</strong>
+              <ul>
+                <li>Interopérabilité BIM (IFC / BCF)</li>
+                <li>Flux de travail collaboratifs en BIM</li>
+                <li>Respect et contrôle des conventions BIM</li>
+                <li>Coordination numérique entre disciplines</li>
+              </ul>
+            </div>
 
-<section id="projects">
+            <div class="software-block">
+              <strong>Modélisation et ingénierie structurelle</strong>
+              <ul>
+                <li>Modélisation structurelle 3D</li>
+                <li>Modélisation LOD 400</li>
+                <li>Dessin technique structure</li>
+                <li>Modélisation des fondations profondes</li>
+                <li>Modélisation de parois moulées</li>
+              </ul>
+            </div>
 
-<h2>Projets</h2>
+            <div class="software-block">
+              <strong>Gestion et coordination de projet</strong>
+              <ul>
+                <li>Gestion du cycle de vie du projet</li>
+                <li>Coordination de chantier</li>
+                <li>Planification numérique des installations de chantier</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div class="projects">
+    <section id="projets">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Projets</h2>
+          </div>
+          <p>
+            Les rubriques projet issues du portfolio Notion sont conservées et réintégrées dans une présentation plus éditoriale et plus professionnelle.
+          </p>
+        </div>
 
-<div class="card">
-<h3>Projet 01</h3>
-<p>Description du projet, ton rôle, les outils utilisés.</p>
-</div>
+        <div class="projects-grid">
+          <a class="project-card" href="Clément El Hadri BIM Manager & Technical Strategis/Infrastructure hospitalière 31fdf43a89b380b18cbaee3c3d5cb5b2.html">
+            <div class="project-media">🏥</div>
+            <div class="project-body">
+              <div class="project-top">
+                <h3>Infrastructure hospitalière</h3>
+              </div>
+              <p>Coordination BIM et structuration de projet dans un contexte hospitalier à fortes exigences techniques et opérationnelles.</p>
+              <div class="chips">
+                <span class="chip">Santé</span>
+                <span class="chip">Coordination</span>
+                <span class="chip">BIM</span>
+              </div>
+            </div>
+          </a>
 
-<div class="card">
-<h3>Projet 02</h3>
-<p>Description du projet, ton rôle, les outils utilisés.</p>
-</div>
+          <a class="project-card" href="Clément El Hadri BIM Manager & Technical Strategis/Infrastructure de transport 31fdf43a89b380c1b928f3064fd1c5c9.html">
+            <div class="project-media">🚇</div>
+            <div class="project-body">
+              <div class="project-top">
+                <h3>Infrastructure de transport</h3>
+              </div>
+              <p>Gestion des interfaces, méthodes de coordination et exploitation de la donnée sur des opérations de mobilité et d’infrastructure.</p>
+              <div class="chips">
+                <span class="chip">Mobilité</span>
+                <span class="chip">Interopérabilité</span>
+                <span class="chip">Exécution</span>
+              </div>
+            </div>
+          </a>
 
-<div class="card">
-<h3>Projet 03</h3>
-<p>Description du projet, ton rôle, les outils utilisés.</p>
-</div>
+          <a class="project-card" href="Clément El Hadri BIM Manager & Technical Strategis/Tour et parking souterrain 31fdf43a89b3800eb720c034e20aa113.html">
+            <div class="project-media">🌆</div>
+            <div class="project-body">
+              <div class="project-top">
+                <h3>Tour et parking souterrain</h3>
+              </div>
+              <p>Lecture structurelle, coordination technique et gestion de maquettes sur un ensemble complexe mêlant verticalité et infrastructures enterrées.</p>
+              <div class="chips">
+                <span class="chip">Structure</span>
+                <span class="chip">LOD 400</span>
+                <span class="chip">Synthèse</span>
+              </div>
+            </div>
+          </a>
 
-<div class="card">
-<h3>Projet 04</h3>
-<p>Description du projet, ton rôle, les outils utilisés.</p>
-</div>
+          <a class="project-card" href="Clément El Hadri BIM Manager & Technical Strategis/Architecture et bâtiment de prestige 31fdf43a89b38016be3eeabcecdf24af.html">
+            <div class="project-media">🏢</div>
+            <div class="project-body">
+              <div class="project-top">
+                <h3>Architecture et bâtiment de prestige</h3>
+              </div>
+              <p>Qualité de modélisation, exigence de représentation et articulation entre ambitions architecturales et contraintes techniques.</p>
+              <div class="chips">
+                <span class="chip">Prestige</span>
+                <span class="chip">Architecture</span>
+                <span class="chip">Qualité</span>
+              </div>
+            </div>
+          </a>
 
-</div>
+          <a class="project-card" href="Clément El Hadri BIM Manager & Technical Strategis/Visualisation et communication de projets 31fdf43a89b3802db26af824f4bbe907.html">
+            <div class="project-media">🎨</div>
+            <div class="project-body">
+              <div class="project-top">
+                <h3>Visualisation et communication de projets</h3>
+              </div>
+              <p>Usage de Blender et d’Unreal Engine pour rendre la donnée technique plus compréhensible, plus engageante et plus actionnable.</p>
+              <div class="chips">
+                <span class="chip">Blender</span>
+                <span class="chip">UE5</span>
+                <span class="chip">Communication</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
 
-</section>
+    <section id="contact">
+      <div class="container contact-grid">
+        <div class="contact-card">
+          <div class="section-head" style="margin-bottom: 0;">
+            <div>
+              <h2>Contact</h2>
+            </div>
+          </div>
+          <p>
+            Tu peux maintenant utiliser cette section comme bloc de contact final, avec des liens directs vers ton email, ton profil LinkedIn et tes CV PDF.
+          </p>
+          <div class="contact-links">
+            <a class="contact-link" href="mailto:elhadriclement@hotmail.com">
+              <small>Email</small>
+              <strong>elhadriclement@hotmail.com</strong>
+            </a>
+            <a class="contact-link" href="https://www.linkedin.com/in/clement-elhadri" target="_blank" rel="noopener noreferrer">
+              <small>LinkedIn</small>
+              <strong>linkedin.com/in/clement-elhadri</strong>
+            </a>
+            <a class="contact-link" href="Resume_El Hadri Clement.pdf" target="_blank" rel="noopener noreferrer">
+              <small>CV</small>
+              <strong>Télécharger le CV (EN)</strong>
+            </a>
+          </div>
+        </div>
 
-<section id="skills">
+        <div class="contact-card">
+          <p class="tag" style="margin-bottom: 18px; display: inline-flex;">Disponible pour échanges & opportunités</p>
+          <h3 style="font-size: 1.6rem; line-height: 1.15; margin-bottom: 14px;">Disponible pour opportunités à Paris, NYC, DC ou en remote.</h3>
+          <p>
+            Cette version met mieux en valeur un profil orienté BIM, automation et digital execution. Tu peux encore aller plus loin en ajoutant une page dédiée par projet et une version FR/EN séparée.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<h2>Compétences</h2>
-
-<div class="skills">
-
-<div class="card">
-<h3>Revit</h3>
-<p>Modélisation BIM</p>
-</div>
-
-<div class="card">
-<h3>Coordination</h3>
-<p>Gestion des interférences</p>
-</div>
-
-<div class="card">
-<h3>Conception</h3>
-<p>Architecture</p>
-</div>
-
-<div class="card">
-<h3>Présentation</h3>
-<p>Documents et visuels</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="contact">
-
-<h2>Contact</h2>
-
-<p>Email : tonemail@email.com</p>
-<p>LinkedIn : lien vers ton profil</p>
-
-</section>
-
-<footer>
-
-Portfolio – Ton Nom
-
-</footer>
-
+  <footer>
+    <div class="container">
+      <div class="footer-card">
+        <div>
+          <strong>Clément El Hadri — Portfolio</strong>
+          <p>AI-Driven Architectural Technology Engineer</p>
+        </div>
+        <p>© 2026 — Tous droits réservés</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
