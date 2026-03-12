@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thinking — Clément El Hadri</title>
+  <meta
+    name="description"
+    content="Technical notes and professional thinking by Clément El Hadri on BIM, data, automation and digital construction workflows."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">Clément El Hadri</a>
+
+      <button class="nav-toggle" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu">
+        <a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a>
+        <a href="projects.html" data-fr="Projets" data-en="Projects">Projets</a>
+        <a href="thinking.html" data-fr="Réflexion" data-en="Thinking">Réflexion</a>
+        <a href="index.html#contact" data-fr="Contact" data-en="Contact">Contact</a>
+
+        <button class="lang-switch" id="langSwitch" aria-label="Changer la langue">
+          <span>FR</span> | <span>EN</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container reveal">
+        <p class="eyebrow" data-fr="Réflexion" data-en="Thinking">Réflexion</p>
+        <h1
+          data-fr="Méthode, logique et lecture des systèmes"
+          data-en="Method, logic and reading of systems"
+        >
+          Méthode, logique et lecture des systèmes
+        </h1>
+        <p
+          class="hero-text"
+          data-fr="Cette page rassemble des notes courtes sur le BIM, les workflows numériques, la donnée et la manière de rendre les environnements techniques plus lisibles, plus robustes et plus utiles."
+          data-en="This page gathers short notes on BIM, digital workflows, data and how to make technical environments clearer, more robust and more useful."
+        >
+          Cette page rassemble des notes courtes sur le BIM, les workflows numériques, la donnée et la manière de rendre les environnements techniques plus lisibles, plus robustes et plus utiles.
+        </p>
+      </div>
+    </section>
+
+    <section class="section thinking-intro">
+      <div class="container section-grid reveal">
+        <div>
+          <p class="section-tag" data-fr="Positionnement" data-en="Positioning">Positionnement</p>
+          <h2
+            data-fr="Penser un projet, ce n’est pas seulement le modéliser"
+            data-en="Thinking a project is not only about modeling it"
+          >
+            Penser un projet, ce n’est pas seulement le modéliser
+          </h2>
+        </div>
+        <div>
+          <p
+            data-fr="Les outils sont utiles, mais ils ne remplacent ni la méthode, ni la lecture des contraintes, ni la capacité à structurer une logique de travail. Cette page montre cette dimension du profil : comprendre, organiser, clarifier et améliorer."
+            data-en="Tools are useful, but they do not replace method, reading constraints or the ability to structure a working logic. This page highlights that side of the profile: understanding, organizing, clarifying and improving."
+          >
+            Les outils sont utiles, mais ils ne remplacent ni la méthode, ni la lecture des contraintes, ni la capacité à structurer une logique de travail. Cette page montre cette dimension du profil : comprendre, organiser, clarifier et améliorer.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-tag" data-fr="Notes" data-en="Notes">Notes</p>
+            <h2
+              data-fr="Quelques réflexions techniques"
+              data-en="A few technical reflections"
+            >
+              Quelques réflexions techniques
+            </h2>
+          </div>
+        </div>
+
+        <div class="thinking-grid">
+          <article class="thinking-card reveal">
+            <div class="thinking-meta">
+              <span class="tag">BIM</span>
+              <span class="tag">AI</span>
+            </div>
+            <h3 data-fr="BIM & IA : assister la structure plutôt que remplacer l’analyse"
+                data-en="BIM & AI: assisting structure rather than replacing analysis">
+              BIM & IA : assister la structure plutôt que remplacer l’analyse
+            </h3>
+
+            <div class="thinking-block">
+              <h4 data-fr="Problème" data-en="Problem">Problème</h4>
+              <p
+                data-fr="L’IA est souvent utilisée comme un outil de génération rapide, mais rarement comme un soutien à la structuration des méthodes ou de l’information projet."
+                data-en="AI is often used as a fast generation tool, but rarely as support for structuring project methods or information."
+              >
+                L’IA est souvent utilisée comme un outil de génération rapide, mais rarement comme un soutien à la structuration des méthodes ou de l’information projet.
+              </p>
+            </div>
+
+            <div class="thinking-block">
+              <h4 data-fr="Observation" data-en="Observation">Observation</h4>
+              <p
+                data-fr="Dans beaucoup d’environnements techniques, le vrai problème n’est pas le manque de contenu mais le manque de clarté, de hiérarchie et de logique dans les échanges."
+                data-en="In many technical environments, the real problem is not lack of content but lack of clarity, hierarchy and logic in exchanges."
+              >
+                Dans beaucoup d’environnements techniques, le vrai problème n’est pas le manque de contenu mais le manque de clarté, de hiérarchie et de logique dans les échanges.
+              </p>
+            </div>
+
+            <div class="thinking-block">
+              <h4 data-fr="Analyse" data-en="Analysis">Analyse</h4>
+              <p
+                data-fr="L’intérêt réel de l’IA, dans un cadre BIM, peut être de soutenir l’organisation d’idées, la formalisation de standards, la lecture des flux et la préparation de solutions plus lisibles."
+                data-en="The real value of AI in a BIM context can be to support idea organization, standard formalization, flow reading and preparation of clearer solutions."
+              >
+                L’intérêt réel de l’IA, dans un cadre BIM, peut être de soutenir l’organisation d’idées, la formalisation de standards, la lecture des flux et la préparation de solutions plus lisibles.
+              </p>
+            </div>
+
+            <div class="thinking-block">
+              <h4 data-fr="Conclusion" data-en="Conclusion">Conclusion</h4>
+              <p
+                data-fr="L’IA devient pertinente lorsqu’elle renforce une pensée structurée. Elle ne remplace pas le jugement technique, elle peut l’aider à se déployer plus vite et plus clairement."
+                data-en="AI becomes relevant when it strengthens structured thinking. It does not replace technical judgment; it can help it unfold faster and more clearly."
+              >
+                L’IA devient pertinente lorsqu’elle renforce une pensée structurée. Elle ne remplace pas le jugement technique, elle peut l’aider à se déployer plus vite et plus clairement.
+              </p>
+            </div>
+          </article>
+
+          <article class="thinking-card reveal">
+            <div class="thinking-meta">
+              <span class="tag">Automation</span>
+              <span class="tag" data-fr="Workflow" data-en="Workflow">Workflow</span>
+            </div>
+            <h3 data-fr="Automatiser sans complexifier"
+                data-en="Automating without adding complexity">
+              Automatiser sans complexifier
+            </h3>
+
+            <div class="thinking-block">
+              <h4 data-fr="Problème" data-en="Problem">Problème</h4>
+              <p
+                data-fr="Certaines automatisations promettent un gain de temps immédiat mais ajoutent à long terme de la dépendance, de l’opacité ou de la fragilité dans les processus."
+                data-en="Some automations promise immediate time savings but add long-term dependency, opacity or fragility to processes."
+              >
+                Certaines automatisations promettent un gain de temps immédiat mais ajoutent à long terme de la dépendance, de l’opacité ou de la fragilité dans les processus.
+              </p>
+            </div>
+
+            <div class="thinking-block">
+              <h4 data-fr="Observation" data-en="Observation">Observation</h4>
+              <p
+                data-fr="Un bon workflow n’est pas seulement rapide. Il doit être compris, repris, transmis et maintenu sans devenir un point de rupture."
+                data-en="A good workflow is not only fast. It must be understood, reused, transmitted and maintained without becoming a breaking point."
+              >
+                Un bon workflow n’est pas seulement rapide. Il doit être compris, repris, transmis et maintenu sans devenir un point de rupture.
+              </p>
+            </div>
+
+            <div class="thinking-block">
+              <h4 data-fr="Analyse" data-en="Analysis">Analyse</h4>
+              <p
+                data-fr="L’automatisation utile est celle qui retire de la friction sans dégrader la lisibilité du système. Elle doit simplifier la charge mentale, pas la déplacer."
+                data-en="Useful automation is the one that removes friction without degrading system readability. It must simplify mental load, not shift it elsewhere."
+              >
+                L’automatisation utile est celle qui retire de la friction sans dégrader la lisibilité du système. Elle doit simplifier la charge mentale, pas la déplacer.
+              </p>
+            </div>
+
+            <div class="thinking-block">
+              <h4 data-fr="Conclusion" data-en="Conclusion">Conclusion</h4>
+              <p
+                data-fr="Avant d’automatiser, il faut d’abord clarifier. Une méthode simple et robuste vaut souvent mieux qu’une sophistication difficile à maintenir."
+                data-en="Before automating, one must first clarify. A simple and robust method is often better than sophistication that is hard to maintain."
+              >
+                Avant d’automatiser, il faut d’abord clarifier. Une méthode simple et robuste vaut souvent mieux qu’une sophistication difficile à maintenir.
+              </p>
+            </div>
+          </article>
+
+          <article class="thinking-card reveal">
+            <div class="thinking-meta">
+              <span class="tag">Data</span>
+              <span class="tag">BIM</span>
+            </div>
+            <h3 data-fr="Structurer la donnée BIM pour mieux décider"
+                data-en="Structuring BIM data for better decision-making">
+              Structurer la donnée BIM pour mieux décider
+            </h3>
+
+            <div class="thinking-block">
+              <h4 data-fr="Problème" data-en="Problem">Problème</h4>
+              <p
+                data-fr="La donnée projet existe souvent en quantité, mais elle reste difficile à exploiter parce qu’elle est dispersée, hétérogène ou mal hiérarchisée."
+                data-en="Project data often exists in quantity, but remains hard to use because it is scattered, heterogeneous or poorly structured."
+              >
+                La donnée projet existe souvent en quantité, mais elle reste difficile à exploiter parce qu’elle est dispersée, hétérogène ou mal hiérarchisée.
+              </p>
+            </div>
+
+            <div class="thinking-block">
+              <h4 data-fr="Observation" data-en="Observation">Observation</h4>
+              <p
+                data-fr="Un projet devient plus pilotable quand l’information n’est pas seulement présente, mais organisée de façon cohérente selon les usages réels."
+                data-en="A project becomes easier to steer when information is not only present, but organized coherently according to real uses."
+              >
+                Un projet devient plus pilotable quand l’information n’est pas seulement présente, mais organisée de façon cohérente selon les usages réels.
+              </p>
+            </div>
+
+            <div class="thinking-block">
+              <h4 data-fr="Analyse" data-en="Analysis">Analyse</h4>
+              <p
+                data-fr="Structurer la donnée BIM, ce n’est pas faire plus de données. C’est rendre les bonnes informations visibles, fiables et mobilisables au bon moment."
+                data-en="Structuring BIM data is not about making more data. It is about making the right information visible, reliable and usable at the right moment."
+              >
+                Structurer la donnée BIM, ce n’est pas faire plus de données. C’est rendre les bonnes informations visibles, fiables et mobilisables au bon moment.
+              </p>
+            </div>
+
+            <div class="thinking-block">
+              <h4 data-fr="Conclusion" data-en="Conclusion">Conclusion</h4>
+              <p
+                data-fr="La qualité d’un environnement BIM se mesure aussi à sa capacité à aider la décision, pas seulement à produire un modèle."
+                data-en="The quality of a BIM environment is also measured by its ability to support decision-making, not only to produce a model."
+              >
+                La qualité d’un environnement BIM se mesure aussi à sa capacité à aider la décision, pas seulement à produire un modèle.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container reveal">
+        <div class="contact-box">
+          <p class="section-tag" data-fr="Échange" data-en="Discussion">Échange</p>
+          <h2
+            data-fr="Ces sujets vous parlent ?"
+            data-en="Do these topics resonate with you?"
+          >
+            Ces sujets vous parlent ?
+          </h2>
+          <p
+            data-fr="Je m’intéresse particulièrement aux sujets situés à l’intersection du BIM, de la donnée, de la coordination et de l’innovation appliquée."
+            data-en="I am particularly interested in topics at the intersection of BIM, data, coordination and applied innovation."
+          >
+            Je m’intéresse particulièrement aux sujets situés à l’intersection du BIM, de la donnée, de la coordination et de l’innovation appliquée.
+          </p>
+
+          <div class="hero-actions">
+            <a href="index.html#contact" class="btn btn-primary"
+               data-fr="Prendre contact" data-en="Get in touch">
+              Prendre contact
+            </a>
+            <a href="projects.html" class="btn btn-secondary"
+               data-fr="Voir les projets" data-en="View projects">
+              Voir les projets
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Clément El Hadri</p>
+      <p data-fr="Portfolio BIM / Data / Innovation" data-en="BIM / Data / Innovation portfolio">
+        Portfolio BIM / Data / Innovation
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
