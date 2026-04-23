@@ -4,92 +4,89 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tour & parking souterrain — Clément El Hadri</title>
-  <meta name="description" content="Une opération dense où les interfaces entre structure, architecture et sous-sol exigent une lecture technique très rigoureuse." />
+  <meta name="description" content="Coordination BIM sur un projet dense associant verticalité, interfaces structurelles et contraintes d’exécution." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <div class="nav-shell">
-        <a href="index.html" class="logo">Clément El Hadri</a>
-        <button class="nav-toggle" aria-label="Ouvrir le menu">
-          <span></span><span></span><span></span>
-        </button>
-        <nav class="nav-menu">
-          <a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a>
-          <a href="projects.html" data-fr="Projets" data-en="Selected Work">Projets</a>
-          <a href="thinking.html" data-fr="Réflexion" data-en="Thinking">Réflexion</a>
-          <a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
-          <button class="lang-switch" id="langSwitch" aria-label="Changer la langue"><span>FR</span> / <span>EN</span></button>
-          <a class="nav-cta" href="mailto:contact@example.com" data-fr="Prendre contact" data-en="Book a call">Prendre contact</a>
-        </nav>
-      </div>
-    </div>
-  </header>
-
-<main>
-  <section class="page-hero">
-    <div class="container">
-      <div class="page-hero-panel reveal">
-        <p class="eyebrow">High-rise / Coordination</p>
-        <h1 data-fr="Tour & parking souterrain" data-en="Tower & underground parking">Tour & parking souterrain</h1>
-        <p class="large-copy" data-fr="Une opération dense où les interfaces entre structure, architecture et sous-sol exigent une lecture technique très rigoureuse." data-en="A dense operation where interfaces between structure, architecture and basement levels require highly rigorous technical reading.">Une opération dense où les interfaces entre structure, architecture et sous-sol exigent une lecture technique très rigoureuse.</p>
-        <p class="hero-note" data-fr="Le design met ici l’accent sur la tension entre densité et clarté." data-en="The design here emphasizes the tension between density and clarity.">Le design met ici l’accent sur la tension entre densité et clarté.</p>
-      </div>
-    </div>
-  </section>
-  <section class="section reveal">
-    <div class="container detail-grid">
-      <div class="detail-stack">
-        <article class="detail-card">
-          <span class="small-caps" data-fr="Contexte" data-en="Context">Contexte</span>
-          <p data-fr="Projet vertical avec contraintes spatiales fortes, coordination complexe et enjeux d’intégration entre plusieurs systèmes." data-en="Vertical project with tight spatial constraints, complex coordination and integration challenges across multiple systems.">Projet vertical avec contraintes spatiales fortes, coordination complexe et enjeux d’intégration entre plusieurs systèmes.</p>
-        </article>
-        <article class="detail-card">
-          <span class="small-caps" data-fr="Rôle" data-en="Role">Rôle</span>
-          <p data-fr="Support BIM, contrôle des interfaces, amélioration de la lecture des conflits et structuration de la réponse projet." data-en="BIM support, interface control, improved conflict readability and structured project responses.">Support BIM, contrôle des interfaces, amélioration de la lecture des conflits et structuration de la réponse projet.</p>
-        </article>
-        <article class="detail-card">
-          <span class="small-caps" data-fr="Problème technique" data-en="Technical problem">Problème technique</span>
-          <p data-fr="Les collisions et contradictions deviennent rapidement coûteuses lorsque les zones critiques sont compactes." data-en="Collisions and contradictions quickly become costly when critical zones are highly compact.">Les collisions et contradictions deviennent rapidement coûteuses lorsque les zones critiques sont compactes.</p>
-        </article>
-        <article class="detail-card">
-          <span class="small-caps" data-fr="Réponse apportée" data-en="Response">Réponse apportée</span>
-          <p data-fr="Travail de clarification des zones sensibles, hiérarchisation des priorités de coordination et rendu plus lisible des arbitrages." data-en="Clarifying sensitive areas, prioritizing coordination issues and making design decisions easier to read.">Travail de clarification des zones sensibles, hiérarchisation des priorités de coordination et rendu plus lisible des arbitrages.</p>
-        </article>
-        <article class="detail-card">
-          <span class="small-caps" data-fr="Résultat" data-en="Outcome">Résultat</span>
-          <p data-fr="Une coordination plus maîtrisée sur les zones critiques et une communication plus crédible autour des arbitrages techniques." data-en="A more controlled coordination process in critical zones and more credible communication around technical decisions.">Une coordination plus maîtrisée sur les zones critiques et une communication plus crédible autour des arbitrages techniques.</p>
-          <ul>
-            <li data-fr="Vision plus claire des interfaces prioritaires" data-en="Clearer view of priority interfaces">Vision plus claire des interfaces prioritaires</li>
-            <li data-fr="Moins d’ambiguïté dans les arbitrages" data-en="Less ambiguity in decisions">Moins d’ambiguïté dans les arbitrages</li>
-            <li data-fr="Lecture plus solide des contraintes spatiales" data-en="Stronger reading of spatial constraints">Lecture plus solide des contraintes spatiales</li>
-          </ul>
-        </article>
-      </div>
-      <aside class="visual-panel">
-        <div class="visual-label">Spatial Tension</div>
-        <div class="visual-box">
-          <strong data-fr="Outils" data-en="Tools">Outils</strong>
-          <p>Revit · clash detection · coordination matrices · issue review</p>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container nav">
+        <a href="index.html" class="logo-wrap"><span class="logo-mark">ch</span><span class="logo-text"><span class="logo-name">Clément El Hadri</span><span class="logo-role" data-fr="BIM • Data • Innovation" data-en="BIM • Data • Innovation">BIM • Data • Innovation</span></span></a>
+        <button class="nav-toggle" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+        <div class="nav-menu">
+          <nav class="nav-links">
+            <a href="projects.html" data-fr="Work" data-en="Work">Work</a>
+            <a href="thinking.html" data-fr="Réflexion" data-en="Thinking">Réflexion</a>
+            <a href="index.html#about" data-fr="À propos" data-en="About">À propos</a>
+            <a href="index.html#contact" data-fr="Contact" data-en="Contact">Contact</a>
+            <button class="lang-switch" id="langSwitch"><span>FR</span> | <span>EN</span></button>
+          </nav>
+          <a class="nav-cta" href="projects.html" data-fr="Tous les projets ↗" data-en="All projects ↗">Tous les projets ↗</a>
         </div>
-      </aside>
-    </div>
-  </section>
-</main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-shell">
-        <p data-fr="Portfolio de Clément El Hadri — design éditorial, structure claire et approche premium." data-en="Portfolio of Clément El Hadri — editorial design, clear structure and premium positioning.">Portfolio de Clément El Hadri — design éditorial, structure claire et approche premium.</p>
-        <p data-fr="Mis à jour en 2026 — HTML, CSS, JavaScript" data-en="Updated in 2026 — HTML, CSS, JavaScript">Mis à jour en 2026 — HTML, CSS, JavaScript</p>
       </div>
-    </div>
-  </footer>
+    </header>
+    <main>
+      <section class="project-hero section">
+        <div class="container reveal">
+          <div class="project-panel">
+            <a href="projects.html" class="back-link" data-fr="← Retour aux projets" data-en="← Back to projects">← Retour aux projets</a>
+            <div class="project-hero-grid" style="margin-top: 22px;">
+              <div>
+                <p class="eyebrow" data-fr="Projet" data-en="Project">Projet</p>
+                <h1 data-fr="Tour & parking souterrain" data-en="Tour & parking souterrain">Tour & parking souterrain</h1>
+                <div class="hero-line"></div>
+                <p class="project-summary" data-fr="Coordination BIM sur un projet dense associant verticalité, interfaces structurelles et contraintes d’exécution." data-en="Coordination BIM sur un projet dense associant verticalité, interfaces structurelles et contraintes d’exécution.">Coordination BIM sur un projet dense associant verticalité, interfaces structurelles et contraintes d’exécution.</p>
+              </div>
+              <aside class="project-side-card">
+                <h3 data-fr="Mots-clés" data-en="Keywords">Mots-clés</h3>
+                <div class="detail-list" style="margin-top: 14px;"><span>Tower</span><span>Underground</span><span>Execution</span></div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container reveal">
+          <div class="detail-grid">
+            <div class="detail-copy">
+              <div class="text-block">
+                <h2 data-fr="Contexte & enjeu" data-en="Context & challenge">Contexte & enjeu</h2>
+                <p data-fr="Sur un projet combinant tour et parking souterrain, la complexité spatiale et les interfaces entre corps d’état rendent la coordination particulièrement sensible. L’objectif était de mieux anticiper les conflits et de fiabiliser les arbitrages." data-en="Sur un projet combinant tour et parking souterrain, la complexité spatiale et les interfaces entre corps d’état rendent la coordination particulièrement sensible. L’objectif était de mieux anticiper les conflits et de fiabiliser les arbitrages.">Sur un projet combinant tour et parking souterrain, la complexité spatiale et les interfaces entre corps d’état rendent la coordination particulièrement sensible. L’objectif était de mieux anticiper les conflits et de fiabiliser les arbitrages.</p>
+              </div>
+              <div class="text-block">
+                <h2 data-fr="Approche" data-en="Approach">Approche</h2>
+                <ul class="list-clean"><li data-fr="Lecture transversale des interfaces techniques" data-en="Lecture transversale des interfaces techniques">Lecture transversale des interfaces techniques</li><li data-fr="Organisation visuelle des points de coordination prioritaires" data-en="Organisation visuelle des points de coordination prioritaires">Organisation visuelle des points de coordination prioritaires</li><li data-fr="Soutien à la prise de décision grâce à des supports plus lisibles" data-en="Soutien à la prise de décision grâce à des supports plus lisibles">Soutien à la prise de décision grâce à des supports plus lisibles</li></ul>
+              </div>
+              <div class="text-block">
+                <h2 data-fr="Résultat" data-en="Outcome">Résultat</h2>
+                <p data-fr="Le travail de clarification a permis d’orienter plus vite les arbitrages et de sécuriser les zones les plus sensibles du projet." data-en="Le travail de clarification a permis d’orienter plus vite les arbitrages et de sécuriser les zones les plus sensibles du projet.">Le travail de clarification a permis d’orienter plus vite les arbitrages et de sécuriser les zones les plus sensibles du projet.</p>
+              </div>
+            </div>
+            <aside class="detail-aside">
+              <article class="value-card">
+                <h3 data-fr="Point de vue" data-en="Point of view">Point de vue</h3>
+                <p data-fr="Sur ce type d’opération, la visualisation sert autant à coordonner qu’à décider." data-en="Sur ce type d’opération, la visualisation sert autant à coordonner qu’à décider.">Sur ce type d’opération, la visualisation sert autant à coordonner qu’à décider.</p>
+              </article>
+              <article class="value-card">
+                <h3 data-fr="À retenir" data-en="Key takeaway">À retenir</h3>
+                <p data-fr="La densité spatiale exige une hiérarchisation fine des priorités de coordination." data-en="La densité spatiale exige une hiérarchisation fine des priorités de coordination.">La densité spatiale exige une hiérarchisation fine des priorités de coordination.</p>
+              </article>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-bar">
+        <span>© 2026 Clément El Hadri</span>
+        <span>Tour & parking souterrain</span>
+      </div>
+    </footer>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
-

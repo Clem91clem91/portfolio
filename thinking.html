@@ -4,78 +4,85 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Réflexion — Clément El Hadri</title>
-  <meta name="description" content="Réflexions sur le BIM, la donnée et les méthodes." />
+  <meta name="description" content="Réflexions sur le BIM, la donnée, la méthode projet et l'innovation digitale dans la construction." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <div class="nav-shell">
-        <a href="index.html" class="logo">Clément El Hadri</a>
-        <button class="nav-toggle" aria-label="Ouvrir le menu">
-          <span></span><span></span><span></span>
-        </button>
-        <nav class="nav-menu">
-          <a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a>
-          <a href="projects.html" data-fr="Projets" data-en="Selected Work">Projets</a>
-          <a href="thinking.html" data-fr="Réflexion" data-en="Thinking">Réflexion</a>
-          <a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
-          <button class="lang-switch" id="langSwitch" aria-label="Changer la langue"><span>FR</span> / <span>EN</span></button>
-          <a class="nav-cta" href="mailto:contact@example.com" data-fr="Prendre contact" data-en="Book a call">Prendre contact</a>
-        </nav>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container nav">
+        <a href="index.html" class="logo-wrap"><span class="logo-mark">ch</span><span class="logo-text"><span class="logo-name">Clément El Hadri</span><span class="logo-role" data-fr="BIM • Data • Innovation" data-en="BIM • Data • Innovation">BIM • Data • Innovation</span></span></a>
+        <button class="nav-toggle" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+        <div class="nav-menu">
+          <nav class="nav-links">
+            <a href="projects.html" data-fr="Work" data-en="Work">Work</a>
+            <a href="thinking.html" data-fr="Réflexion" data-en="Thinking">Réflexion</a>
+            <a href="index.html#about" data-fr="À propos" data-en="About">À propos</a>
+            <a href="index.html#contact" data-fr="Contact" data-en="Contact">Contact</a>
+            <button class="lang-switch" id="langSwitch"><span>FR</span> | <span>EN</span></button>
+          </nav>
+          <a class="nav-cta" href="projects.html" data-fr="Voir les projets ↗" data-en="View projects ↗">Voir les projets ↗</a>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-<main>
-  <section class="page-hero">
-    <div class="container">
-      <div class="page-hero-panel reveal">
-        <p class="eyebrow" data-fr="Réflexion" data-en="Thinking">Réflexion</p>
-        <h1 data-fr="Méthode, lisibilité et système : la partie moins visible du travail." data-en="Method, legibility and systems: the less visible side of the work.">Méthode, lisibilité et système : la partie moins visible du travail.</h1>
-        <p class="large-copy" data-fr="Cette page remplace la logique “blog technique” par une lecture plus éditoriale et plus cohérente avec le reste du site." data-en="This page replaces the feel of a technical blog with a more editorial reading aligned with the rest of the site.">Cette page remplace la logique “blog technique” par une lecture plus éditoriale et plus cohérente avec le reste du site.</p>
-      </div>
-    </div>
-  </section>
-  <section class="section reveal">
-    <div class="container thinking-grid">
-      <article class="thinking-card">
-        <div class="tag-row"><span class="tag">BIM</span><span class="tag">AI</span></div>
-        <h3 data-fr="BIM & IA : assister la structure plutôt que remplacer l’analyse" data-en="BIM & AI: supporting structure rather than replacing analysis">BIM & IA : assister la structure plutôt que remplacer l’analyse</h3>
-        <p data-fr="L’intérêt de l’IA n’est pas de produire plus vite n’importe quoi. Il est d’aider à classer, relire, comparer, alerter et réduire la charge cognitive." data-en="The value of AI is not to produce anything faster. It is to help classify, review, compare, alert and reduce cognitive load.">L’intérêt de l’IA n’est pas de produire plus vite n’importe quoi. Il est d’aider à classer, relire, comparer, alerter et réduire la charge cognitive.</p>
-      </article>
-      <article class="thinking-card">
-        <div class="tag-row"><span class="tag">Automation</span><span class="tag">Workflow</span></div>
-        <h3 data-fr="Automatiser sans complexifier" data-en="Automating without overcomplicating">Automatiser sans complexifier</h3>
-        <p data-fr="Un workflow n’est pas réussi parce qu’il est impressionnant. Il l’est lorsqu’il reste compréhensible, transmissible et maintenable dans le temps." data-en="A workflow is not successful because it looks impressive. It is successful when it remains understandable, transferable and maintainable over time.">Un workflow n’est pas réussi parce qu’il est impressionnant. Il l’est lorsqu’il reste compréhensible, transmissible et maintenable dans le temps.</p>
-      </article>
-      <article class="thinking-card">
-        <div class="tag-row"><span class="tag">Data</span><span class="tag">Decision</span></div>
-        <h3 data-fr="Structurer la donnée BIM pour mieux décider" data-en="Structuring BIM data for better decisions">Structurer la donnée BIM pour mieux décider</h3>
-        <p data-fr="La donnée devient utile lorsqu’elle change la qualité d’une décision. Cela demande de la hiérarchie, des règles et des points de contrôle." data-en="Data becomes useful when it changes the quality of a decision. That requires hierarchy, rules and review checkpoints.">La donnée devient utile lorsqu’elle change la qualité d’une décision. Cela demande de la hiérarchie, des règles et des points de contrôle.</p>
-      </article>
-    </div>
-  </section>
-  <section class="section reveal" id="contact">
-    <div class="container quote-card">
-      <span class="small-caps" data-fr="Discussion" data-en="Discussion">Discussion</span>
-      <blockquote data-fr="Les bons outils servent d’abord une méthode. Ils ne la remplacent jamais." data-en="Good tools first serve a method. They never replace it.">Les bons outils servent d’abord une méthode. Ils ne la remplacent jamais.</blockquote>
-      <a href="mailto:contact@example.com" class="btn btn-primary" data-fr="Discuter de ces sujets" data-en="Discuss these topics">Discuter de ces sujets</a>
-    </div>
-  </section>
-</main>
+    <main>
+      <section class="page-hero section">
+        <div class="container reveal">
+          <div class="page-panel">
+            <div class="page-hero-grid">
+              <div>
+                <p class="eyebrow" data-fr="Réflexion" data-en="Thinking">Réflexion</p>
+                <h1 data-fr="Des notes sur la méthode, la donnée et l’exécution." data-en="Notes on method, data and execution.">Des notes sur la méthode, la donnée et l’exécution.</h1>
+                <div class="hero-line"></div>
+                <p class="page-lead" data-fr="Je m’intéresse particulièrement aux interfaces entre production BIM, structuration de l’information, automatisation et qualité de communication." data-en="I'm especially interested in the interfaces between BIM delivery, information structuring, automation and communication quality.">Je m’intéresse particulièrement aux interfaces entre production BIM, structuration de l’information, automatisation et qualité de communication.</p>
+              </div>
+              <aside class="page-side-card">
+                <h3 data-fr="Thématiques" data-en="Topics">Thématiques</h3>
+                <ul class="list-clean">
+                  <li data-fr="Méthodes de coordination et pilotage BIM" data-en="Coordination methods and BIM leadership">Méthodes de coordination et pilotage BIM</li>
+                  <li data-fr="Données, standards et qualité des flux projet" data-en="Data, standards and project flow quality">Données, standards et qualité des flux projet</li>
+                  <li data-fr="Présenter les sujets techniques avec plus de clarté" data-en="Presenting technical work with more clarity">Présenter les sujets techniques avec plus de clarté</li>
+                </ul>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-shell">
-        <p data-fr="Portfolio de Clément El Hadri — design éditorial, structure claire et approche premium." data-en="Portfolio of Clément El Hadri — editorial design, clear structure and premium positioning.">Portfolio de Clément El Hadri — design éditorial, structure claire et approche premium.</p>
-        <p data-fr="Mis à jour en 2026 — HTML, CSS, JavaScript" data-en="Updated in 2026 — HTML, CSS, JavaScript">Mis à jour en 2026 — HTML, CSS, JavaScript</p>
+      <section class="section">
+        <div class="container reveal">
+          <div class="thought-grid">
+            <article class="thought-card">
+              <div class="article-meta"><span data-fr="Méthode" data-en="Method">Méthode</span><span data-fr="BIM" data-en="BIM">BIM</span></div>
+              <h3 data-fr="Penser le BIM comme un système, pas comme un logiciel." data-en="Thinking of BIM as a system, not a software.">Penser le BIM comme un système, pas comme un logiciel.</h3>
+              <p data-fr="Les meilleurs résultats viennent rarement d’un outil isolé. Ils viennent d’une chaîne cohérente entre structure des données, standards d’équipe, contrôle qualité et compréhension des usages." data-en="The best outcomes rarely come from a single tool. They come from a coherent chain linking data structure, team standards, QA and actual user needs.">Les meilleurs résultats viennent rarement d’un outil isolé. Ils viennent d’une chaîne cohérente entre structure des données, standards d’équipe, contrôle qualité et compréhension des usages.</p>
+            </article>
+            <article class="thought-card">
+              <div class="article-meta"><span data-fr="Donnée" data-en="Data">Donnée</span><span data-fr="Structure" data-en="Structure">Structure</span></div>
+              <h3 data-fr="Une donnée utile est une donnée gouvernée." data-en="Useful data is governed data.">Une donnée utile est une donnée gouvernée.</h3>
+              <p data-fr="Sans conventions, sans logique de nommage et sans règles de circulation, la donnée devient rapidement un bruit coûteux. La valeur vient de la gouvernance autant que de la capture." data-en="Without conventions, naming logic and circulation rules, data quickly turns into expensive noise. Value comes from governance as much as from capture.">Sans conventions, sans logique de nommage et sans règles de circulation, la donnée devient rapidement un bruit coûteux. La valeur vient de la gouvernance autant que de la capture.</p>
+            </article>
+            <article class="thought-card">
+              <div class="article-meta"><span data-fr="Communication" data-en="Communication">Communication</span><span data-fr="Design" data-en="Design">Design</span></div>
+              <h3 data-fr="La forme compte autant que le fond sur les sujets techniques." data-en="Form matters as much as substance on technical topics.">La forme compte autant que le fond sur les sujets techniques.</h3>
+              <p data-fr="Un tableau, un visuel ou une page bien structurée peuvent accélérer la compréhension, limiter les malentendus et rendre une proposition beaucoup plus convaincante." data-en="A well-structured table, visual or page can speed up understanding, reduce misunderstandings and make a proposal much more convincing.">Un tableau, un visuel ou une page bien structurée peuvent accélérer la compréhension, limiter les malentendus et rendre une proposition beaucoup plus convaincante.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-bar">
+        <span>© 2026 Clément El Hadri</span>
+        <span data-fr="Réflexion sur BIM, data et exécution" data-en="Thoughts on BIM, data and execution">Réflexion sur BIM, data et exécution</span>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>

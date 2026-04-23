@@ -3,93 +3,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Visualisation et communication de projets — Clément El Hadri</title>
-  <meta name="description" content="Rendre un sujet technique plus convaincant demande autant de structure que de qualité visuelle." />
+  <title>Visualisation & communication de projets — Clément El Hadri</title>
+  <meta name="description" content="Supports, mise en forme et narration visuelle pour rendre les sujets techniques plus accessibles." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <div class="nav-shell">
-        <a href="index.html" class="logo">Clément El Hadri</a>
-        <button class="nav-toggle" aria-label="Ouvrir le menu">
-          <span></span><span></span><span></span>
-        </button>
-        <nav class="nav-menu">
-          <a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a>
-          <a href="projects.html" data-fr="Projets" data-en="Selected Work">Projets</a>
-          <a href="thinking.html" data-fr="Réflexion" data-en="Thinking">Réflexion</a>
-          <a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
-          <button class="lang-switch" id="langSwitch" aria-label="Changer la langue"><span>FR</span> / <span>EN</span></button>
-          <a class="nav-cta" href="mailto:contact@example.com" data-fr="Prendre contact" data-en="Book a call">Prendre contact</a>
-        </nav>
-      </div>
-    </div>
-  </header>
-
-<main>
-  <section class="page-hero">
-    <div class="container">
-      <div class="page-hero-panel reveal">
-        <p class="eyebrow">Visualization / Communication</p>
-        <h1 data-fr="Visualisation et communication de projets" data-en="Visualization and project communication">Visualisation et communication de projets</h1>
-        <p class="large-copy" data-fr="Rendre un sujet technique plus convaincant demande autant de structure que de qualité visuelle." data-en="Making a technical topic more convincing requires as much structure as visual quality.">Rendre un sujet technique plus convaincant demande autant de structure que de qualité visuelle.</p>
-        <p class="hero-note" data-fr="Cette page assume davantage la dimension image, mise en scène et crédibilité." data-en="This page leans further into image, staging and credibility.">Cette page assume davantage la dimension image, mise en scène et crédibilité.</p>
-      </div>
-    </div>
-  </section>
-  <section class="section reveal">
-    <div class="container detail-grid">
-      <div class="detail-stack">
-        <article class="detail-card">
-          <span class="small-caps" data-fr="Contexte" data-en="Context">Contexte</span>
-          <p data-fr="Travaux de représentation et de communication destinés à rendre les projets plus compréhensibles pour différents interlocuteurs." data-en="Representation and communication work aimed at making projects more understandable for different audiences.">Travaux de représentation et de communication destinés à rendre les projets plus compréhensibles pour différents interlocuteurs.</p>
-        </article>
-        <article class="detail-card">
-          <span class="small-caps" data-fr="Rôle" data-en="Role">Rôle</span>
-          <p data-fr="Mise en forme visuelle, cadrage du récit projet et sélection d’angles de lecture adaptés au public visé." data-en="Visual shaping, project storytelling and selection of the most relevant reading angles for the target audience.">Mise en forme visuelle, cadrage du récit projet et sélection d’angles de lecture adaptés au public visé.</p>
-        </article>
-        <article class="detail-card">
-          <span class="small-caps" data-fr="Problème technique" data-en="Technical problem">Problème technique</span>
-          <p data-fr="Un projet techniquement solide peut perdre en impact si sa présentation reste confuse ou trop brute." data-en="A technically strong project can lose impact if its presentation remains confusing or too raw.">Un projet techniquement solide peut perdre en impact si sa présentation reste confuse ou trop brute.</p>
-        </article>
-        <article class="detail-card">
-          <span class="small-caps" data-fr="Réponse apportée" data-en="Response">Réponse apportée</span>
-          <p data-fr="Construire des supports plus désirables, plus hiérarchisés et plus immédiatement lisibles, sans trahir la réalité technique." data-en="Building more desirable, structured and immediately readable materials without betraying the technical reality.">Construire des supports plus désirables, plus hiérarchisés et plus immédiatement lisibles, sans trahir la réalité technique.</p>
-        </article>
-        <article class="detail-card">
-          <span class="small-caps" data-fr="Résultat" data-en="Outcome">Résultat</span>
-          <p data-fr="Une communication plus nette, plus cohérente et plus persuasive auprès des équipes comme des décideurs." data-en="Sharper, more coherent and more persuasive communication for teams and decision-makers alike.">Une communication plus nette, plus cohérente et plus persuasive auprès des équipes comme des décideurs.</p>
-          <ul>
-            <li data-fr="Hiérarchie visuelle renforcée" data-en="Stronger visual hierarchy">Hiérarchie visuelle renforcée</li>
-            <li data-fr="Meilleure compréhension des messages clés" data-en="Improved understanding of key messages">Meilleure compréhension des messages clés</li>
-            <li data-fr="Valorisation plus crédible du projet" data-en="More credible project valorization">Valorisation plus crédible du projet</li>
-          </ul>
-        </article>
-      </div>
-      <aside class="visual-panel">
-        <div class="visual-label">Visual Communication</div>
-        <div class="visual-box">
-          <strong data-fr="Outils" data-en="Tools">Outils</strong>
-          <p>Adobe suite · InDesign · imagery selection · presentation logic</p>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container nav">
+        <a href="index.html" class="logo-wrap"><span class="logo-mark">ch</span><span class="logo-text"><span class="logo-name">Clément El Hadri</span><span class="logo-role" data-fr="BIM • Data • Innovation" data-en="BIM • Data • Innovation">BIM • Data • Innovation</span></span></a>
+        <button class="nav-toggle" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+        <div class="nav-menu">
+          <nav class="nav-links">
+            <a href="projects.html" data-fr="Work" data-en="Work">Work</a>
+            <a href="thinking.html" data-fr="Réflexion" data-en="Thinking">Réflexion</a>
+            <a href="index.html#about" data-fr="À propos" data-en="About">À propos</a>
+            <a href="index.html#contact" data-fr="Contact" data-en="Contact">Contact</a>
+            <button class="lang-switch" id="langSwitch"><span>FR</span> | <span>EN</span></button>
+          </nav>
+          <a class="nav-cta" href="projects.html" data-fr="Tous les projets ↗" data-en="All projects ↗">Tous les projets ↗</a>
         </div>
-      </aside>
-    </div>
-  </section>
-</main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-shell">
-        <p data-fr="Portfolio de Clément El Hadri — design éditorial, structure claire et approche premium." data-en="Portfolio of Clément El Hadri — editorial design, clear structure and premium positioning.">Portfolio de Clément El Hadri — design éditorial, structure claire et approche premium.</p>
-        <p data-fr="Mis à jour en 2026 — HTML, CSS, JavaScript" data-en="Updated in 2026 — HTML, CSS, JavaScript">Mis à jour en 2026 — HTML, CSS, JavaScript</p>
       </div>
-    </div>
-  </footer>
+    </header>
+    <main>
+      <section class="project-hero section">
+        <div class="container reveal">
+          <div class="project-panel">
+            <a href="projects.html" class="back-link" data-fr="← Retour aux projets" data-en="← Back to projects">← Retour aux projets</a>
+            <div class="project-hero-grid" style="margin-top: 22px;">
+              <div>
+                <p class="eyebrow" data-fr="Projet" data-en="Project">Projet</p>
+                <h1 data-fr="Visualisation & communication de projets" data-en="Visualisation & communication de projets">Visualisation & communication de projets</h1>
+                <div class="hero-line"></div>
+                <p class="project-summary" data-fr="Supports, mise en forme et narration visuelle pour rendre les sujets techniques plus accessibles." data-en="Supports, mise en forme et narration visuelle pour rendre les sujets techniques plus accessibles.">Supports, mise en forme et narration visuelle pour rendre les sujets techniques plus accessibles.</p>
+              </div>
+              <aside class="project-side-card">
+                <h3 data-fr="Mots-clés" data-en="Keywords">Mots-clés</h3>
+                <div class="detail-list" style="margin-top: 14px;"><span>Visualisation</span><span>Communication</span><span>Storytelling</span></div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container reveal">
+          <div class="detail-grid">
+            <div class="detail-copy">
+              <div class="text-block">
+                <h2 data-fr="Contexte & enjeu" data-en="Context & challenge">Contexte & enjeu</h2>
+                <p data-fr="Des sujets techniques très riches perdent souvent en impact faute d’une forme suffisamment claire. Le besoin ici était de produire des supports lisibles, convaincants et adaptés à différents publics." data-en="Des sujets techniques très riches perdent souvent en impact faute d’une forme suffisamment claire. Le besoin ici était de produire des supports lisibles, convaincants et adaptés à différents publics.">Des sujets techniques très riches perdent souvent en impact faute d’une forme suffisamment claire. Le besoin ici était de produire des supports lisibles, convaincants et adaptés à différents publics.</p>
+              </div>
+              <div class="text-block">
+                <h2 data-fr="Approche" data-en="Approach">Approche</h2>
+                <ul class="list-clean"><li data-fr="Travail sur la hiérarchie de l’information" data-en="Travail sur la hiérarchie de l’information">Travail sur la hiérarchie de l’information</li><li data-fr="Création de structures visuelles plus pédagogiques" data-en="Création de structures visuelles plus pédagogiques">Création de structures visuelles plus pédagogiques</li><li data-fr="Recherche d’un équilibre entre précision technique et simplicité de lecture" data-en="Recherche d’un équilibre entre précision technique et simplicité de lecture">Recherche d’un équilibre entre précision technique et simplicité de lecture</li></ul>
+              </div>
+              <div class="text-block">
+                <h2 data-fr="Résultat" data-en="Outcome">Résultat</h2>
+                <p data-fr="Les livrables ont gagné en clarté, en cohérence visuelle et en efficacité de communication, que ce soit en interne ou auprès de partenaires externes." data-en="Les livrables ont gagné en clarté, en cohérence visuelle et en efficacité de communication, que ce soit en interne ou auprès de partenaires externes.">Les livrables ont gagné en clarté, en cohérence visuelle et en efficacité de communication, que ce soit en interne ou auprès de partenaires externes.</p>
+              </div>
+            </div>
+            <aside class="detail-aside">
+              <article class="value-card">
+                <h3 data-fr="Point de vue" data-en="Point of view">Point de vue</h3>
+                <p data-fr="Un bon support ne simplifie pas le fond : il en améliore l’accès." data-en="Un bon support ne simplifie pas le fond : il en améliore l’accès.">Un bon support ne simplifie pas le fond : il en améliore l’accès.</p>
+              </article>
+              <article class="value-card">
+                <h3 data-fr="À retenir" data-en="Key takeaway">À retenir</h3>
+                <p data-fr="Le design de l’information est un levier direct de crédibilité sur les projets techniques." data-en="Le design de l’information est un levier direct de crédibilité sur les projets techniques.">Le design de l’information est un levier direct de crédibilité sur les projets techniques.</p>
+              </article>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-bar">
+        <span>© 2026 Clément El Hadri</span>
+        <span>Visualisation & communication de projets</span>
+      </div>
+    </footer>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
-

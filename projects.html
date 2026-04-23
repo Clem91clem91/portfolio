@@ -4,92 +4,101 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projets — Clément El Hadri</title>
-  <meta name="description" content="Sélection de projets de Clément El Hadri." />
+  <meta name="description" content="Sélection de projets BIM, coordination, visualisation et innovation digitale de Clément El Hadri." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <div class="nav-shell">
-        <a href="index.html" class="logo">Clément El Hadri</a>
-        <button class="nav-toggle" aria-label="Ouvrir le menu">
-          <span></span><span></span><span></span>
-        </button>
-        <nav class="nav-menu">
-          <a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a>
-          <a href="projects.html" data-fr="Projets" data-en="Selected Work">Projets</a>
-          <a href="thinking.html" data-fr="Réflexion" data-en="Thinking">Réflexion</a>
-          <a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
-          <button class="lang-switch" id="langSwitch" aria-label="Changer la langue"><span>FR</span> / <span>EN</span></button>
-          <a class="nav-cta" href="mailto:contact@example.com" data-fr="Prendre contact" data-en="Book a call">Prendre contact</a>
-        </nav>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container nav">
+        <a href="index.html" class="logo-wrap"><span class="logo-mark">ch</span><span class="logo-text"><span class="logo-name">Clément El Hadri</span><span class="logo-role" data-fr="BIM • Data • Innovation" data-en="BIM • Data • Innovation">BIM • Data • Innovation</span></span></a>
+        <button class="nav-toggle" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+        <div class="nav-menu">
+          <nav class="nav-links">
+            <a href="projects.html" data-fr="Work" data-en="Work">Work</a>
+            <a href="thinking.html" data-fr="Réflexion" data-en="Thinking">Réflexion</a>
+            <a href="index.html#about" data-fr="À propos" data-en="About">À propos</a>
+            <a href="index.html#contact" data-fr="Contact" data-en="Contact">Contact</a>
+            <button class="lang-switch" id="langSwitch"><span>FR</span> | <span>EN</span></button>
+          </nav>
+          <a class="nav-cta" href="index.html" data-fr="Accueil ↗" data-en="Home ↗">Accueil ↗</a>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-<main>
-  <section class="page-hero">
-    <div class="container">
-      <div class="page-hero-panel reveal">
-        <p class="eyebrow" data-fr="Selected Work" data-en="Selected Work">Selected Work</p>
-        <h1 data-fr="Des projets lus comme des cas d’étude, pas comme une simple galerie." data-en="Projects treated like case studies, not just a gallery.">Des projets lus comme des cas d’étude, pas comme une simple galerie.</h1>
-        <p class="large-copy" data-fr="Chaque projet est présenté avec plus d’air, une meilleure hiérarchie et un niveau de lisibilité plus proche d’un studio premium." data-en="Each project is presented with more breathing room, stronger hierarchy and a level of clarity closer to a premium studio.">Chaque projet est présenté avec plus d’air, une meilleure hiérarchie et un niveau de lisibilité plus proche d’un studio premium.</p>
-      </div>
-    </div>
-  </section>
-  <section class="section reveal">
-    <div class="container projects-list">
-      <a class="project-card project-row" href="project-healthcare.html">
-        <div class="project-visual"></div>
-        <div class="project-content">
-          <div class="tag-row"><span class="tag">Healthcare</span><span class="tag">BIM</span></div>
-          <h3 data-fr="Infrastructure hospitalière" data-en="Healthcare infrastructure">Infrastructure hospitalière</h3>
-          <p data-fr="Coordination BIM, cohérence documentaire et lecture technique sur un environnement hospitalier complexe." data-en="BIM coordination, document consistency and technical clarity within a complex healthcare environment.">Coordination BIM, cohérence documentaire et lecture technique sur un environnement hospitalier complexe.</p>
-          <span class="project-link" data-fr="Entrer dans le cas d’étude" data-en="Open case study">Entrer dans le cas d’étude</span>
+    <main>
+      <section class="page-hero section">
+        <div class="container reveal">
+          <div class="page-panel">
+            <div class="page-hero-grid">
+              <div>
+                <p class="eyebrow" data-fr="Projets sélectionnés" data-en="Selected work">Projets sélectionnés</p>
+                <h1 data-fr="Une sélection de projets où BIM, méthode et design se rencontrent." data-en="A selection of projects where BIM, method and design meet.">Une sélection de projets où BIM, méthode et design se rencontrent.</h1>
+                <div class="hero-line"></div>
+                <p class="page-lead" data-fr="J’interviens sur des projets complexes en combinant coordination, structuration de données, automatisation et qualité de présentation." data-en="I contribute to complex projects by combining coordination, data structuring, automation and presentation quality.">J’interviens sur des projets complexes en combinant coordination, structuration de données, automatisation et qualité de présentation.</p>
+              </div>
+              <aside class="page-side-card">
+                <h3 data-fr="Ce que vous verrez ici" data-en="What you'll find here">Ce que vous verrez ici</h3>
+                <ul class="list-clean">
+                  <li data-fr="Projets d’infrastructure et de bâtiments à forte technicité" data-en="High-complexity building and infrastructure projects">Projets d’infrastructure et de bâtiments à forte technicité</li>
+                  <li data-fr="Études de cas orientées méthode, système et impact opérationnel" data-en="Case studies focused on method, systems and operational impact">Études de cas orientées méthode, système et impact opérationnel</li>
+                  <li data-fr="Un regard à la fois technique et visuel sur la production de projet" data-en="A technical and visual perspective on project delivery">Un regard à la fois technique et visuel sur la production de projet</li>
+                </ul>
+              </aside>
+            </div>
+          </div>
         </div>
-      </a>
-      <a class="project-card project-row" href="project-transport.html">
-        <div class="project-visual"></div>
-        <div class="project-content">
-          <div class="tag-row"><span class="tag">Transport</span><span class="tag">Delivery</span></div>
-          <h3 data-fr="Infrastructure de transport" data-en="Transport infrastructure">Infrastructure de transport</h3>
-          <p data-fr="Standards, méthode et robustesse des flux sur un projet d’infrastructure à forte coordination." data-en="Standards, method and robust information flows on a coordination-heavy infrastructure project.">Standards, méthode et robustesse des flux sur un projet d’infrastructure à forte coordination.</p>
-          <span class="project-link" data-fr="Entrer dans le cas d’étude" data-en="Open case study">Entrer dans le cas d’étude</span>
-        </div>
-      </a>
-      <a class="project-card project-row" href="project-monaco.html">
-        <div class="project-visual"></div>
-        <div class="project-content">
-          <div class="tag-row"><span class="tag">High-rise</span><span class="tag">Coordination</span></div>
-          <h3 data-fr="Tour & parking souterrain" data-en="Tower & underground parking">Tour & parking souterrain</h3>
-          <p data-fr="Interface entre structure, enveloppe et contraintes spatiales sur un projet dense et exigeant." data-en="Interface between structure, envelope and spatial constraints on a dense and demanding project.">Interface entre structure, enveloppe et contraintes spatiales sur un projet dense et exigeant.</p>
-          <span class="project-link" data-fr="Entrer dans le cas d’étude" data-en="Open case study">Entrer dans le cas d’étude</span>
-        </div>
-      </a>
-      <a class="project-card project-row" href="project-visualization.html">
-        <div class="project-visual"></div>
-        <div class="project-content">
-          <div class="tag-row"><span class="tag">Visualization</span><span class="tag">Communication</span></div>
-          <h3 data-fr="Visualisation et communication de projets" data-en="Project visualization and communication">Visualisation et communication de projets</h3>
-          <p data-fr="Un travail de mise en forme pour rendre les sujets techniques plus désirables et mieux compris." data-en="A communication-focused effort to make technical subjects more desirable and easier to understand.">Un travail de mise en forme pour rendre les sujets techniques plus désirables et mieux compris.</p>
-          <span class="project-link" data-fr="Entrer dans le cas d’étude" data-en="Open case study">Entrer dans le cas d’étude</span>
-        </div>
-      </a>
-    </div>
-  </section>
-</main>
+      </section>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-shell">
-        <p data-fr="Portfolio de Clément El Hadri — design éditorial, structure claire et approche premium." data-en="Portfolio of Clément El Hadri — editorial design, clear structure and premium positioning.">Portfolio de Clément El Hadri — design éditorial, structure claire et approche premium.</p>
-        <p data-fr="Mis à jour en 2026 — HTML, CSS, JavaScript" data-en="Updated in 2026 — HTML, CSS, JavaScript">Mis à jour en 2026 — HTML, CSS, JavaScript</p>
+      <section class="section">
+        <div class="container reveal">
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-thumb" style="--thumb-bg: linear-gradient(135deg, #ead8c2 0%, #f7eee5 100%);"></div>
+              <div class="project-tags"><span>Healthcare</span><span>BIM</span><span>Coordination</span></div>
+              <h3 data-fr="Infrastructure hospitalière" data-en="Healthcare infrastructure">Infrastructure hospitalière</h3>
+              <p data-fr="Organisation BIM, coordination technique et fiabilisation des échanges sur un environnement hospitalier complexe." data-en="BIM organisation, technical coordination and exchange reliability in a complex healthcare environment.">Organisation BIM, coordination technique et fiabilisation des échanges sur un environnement hospitalier complexe.</p>
+              <a class="project-link" href="project-healthcare.html" data-fr="Ouvrir le projet →" data-en="Open project →">Ouvrir le projet →</a>
+            </article>
+
+            <article class="project-card">
+              <div class="project-thumb" style="--thumb-bg: linear-gradient(135deg, #ead2c7 0%, #f7ede7 100%);"></div>
+              <div class="project-tags"><span>Transport</span><span>Data</span><span>Standards</span></div>
+              <h3 data-fr="Infrastructure de transport" data-en="Transport infrastructure">Infrastructure de transport</h3>
+              <p data-fr="Structuration des standards et amélioration des flux d’information sur un périmètre d’infrastructure linéaire." data-en="Standard structuring and information flow improvement on a linear infrastructure scope.">Structuration des standards et amélioration des flux d’information sur un périmètre d’infrastructure linéaire.</p>
+              <a class="project-link" href="project-transport.html" data-fr="Ouvrir le projet →" data-en="Open project →">Ouvrir le projet →</a>
+            </article>
+
+            <article class="project-card">
+              <div class="project-thumb" style="--thumb-bg: linear-gradient(135deg, #e6d2c5 0%, #f7eee8 100%);"></div>
+              <div class="project-tags"><span>Monaco</span><span>Tower</span><span>Underground</span></div>
+              <h3 data-fr="Tour & parking souterrain" data-en="Tower & underground parking">Tour & parking souterrain</h3>
+              <p data-fr="Coordination d’un projet à forte densité spatiale avec interfaces structurelles et contraintes d’exécution marquées." data-en="Coordination of a spatially dense project with structural interfaces and strong execution constraints.">Coordination d’un projet à forte densité spatiale avec interfaces structurelles et contraintes d’exécution marquées.</p>
+              <a class="project-link" href="project-monaco.html" data-fr="Ouvrir le projet →" data-en="Open project →">Ouvrir le projet →</a>
+            </article>
+
+            <article class="project-card">
+              <div class="project-thumb" style="--thumb-bg: linear-gradient(135deg, #eddccf 0%, #faf2eb 100%);"></div>
+              <div class="project-tags"><span>Visualisation</span><span>Communication</span><span>Storytelling</span></div>
+              <h3 data-fr="Visualisation & communication" data-en="Visualisation & communication">Visualisation & communication</h3>
+              <p data-fr="Création de supports plus lisibles et plus convaincants pour porter des sujets techniques auprès de publics variés." data-en="Creation of clearer, more convincing material to communicate technical topics to varied audiences.">Création de supports plus lisibles et plus convaincants pour porter des sujets techniques auprès de publics variés.</p>
+              <a class="project-link" href="project-visualization.html" data-fr="Ouvrir le projet →" data-en="Open project →">Ouvrir le projet →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-bar">
+        <span>© 2026 Clément El Hadri</span>
+        <span data-fr="Sélection de projets" data-en="Selected work">Sélection de projets</span>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
