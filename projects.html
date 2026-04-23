@@ -1,89 +1,95 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css" />
-
-<title>Projets — Clément El Hadri</title>
-<meta name="description" content="Sélection de projets BIM, coordination et workflows numériques menés par Clément El Hadri." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projets — Clément El Hadri</title>
+  <meta name="description" content="Sélection de projets de Clément El Hadri." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-<header class="site-header">
-  <div class="container nav">
-    <a href="index.html" class="logo">Clément El Hadri<small>BIM • Data • Digital Construction</small></a>
-    <button class="nav-toggle" aria-label="Ouvrir le menu">
-      <span></span><span></span><span></span>
-    </button>
-    <nav class="nav-menu">
-      <a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a>
-      <a href="projects.html" data-fr="Projets" data-en="Projects">Projets</a>
-      <a href="thinking.html" data-fr="Réflexion" data-en="Thinking">Réflexion</a>
-      <a href="index.html#contact" data-fr="Contact" data-en="Contact">Contact</a>
-      <button class="lang-switch" id="langSwitch" aria-label="Changer la langue"><span>FR</span> | <span>EN</span></button>
-    </nav>
-  </div>
-</header>
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-shell">
+        <a href="index.html" class="logo">Clément El Hadri</a>
+        <button class="nav-toggle" aria-label="Ouvrir le menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav-menu">
+          <a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a>
+          <a href="projects.html" data-fr="Projets" data-en="Selected Work">Projets</a>
+          <a href="thinking.html" data-fr="Réflexion" data-en="Thinking">Réflexion</a>
+          <a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
+          <button class="lang-switch" id="langSwitch" aria-label="Changer la langue"><span>FR</span> / <span>EN</span></button>
+          <a class="nav-cta" href="mailto:contact@example.com" data-fr="Prendre contact" data-en="Book a call">Prendre contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
 
 <main>
   <section class="page-hero">
-    <div class="container page-hero-card reveal">
-      <p class="eyebrow" data-fr="Portfolio" data-en="Portfolio">Portfolio</p>
-      <h1 data-fr="Projets" data-en="Projects">Projets</h1>
-      <p class="hero-text" data-fr="Une sélection de projets représentatifs autour du BIM, de la coordination technique, de la lisibilité de l’information et des méthodes numériques." data-en="A selection of representative work focused on BIM, technical coordination, information clarity, and digital methods.">Une sélection de projets représentatifs autour du BIM, de la coordination technique, de la lisibilité de l’information et des méthodes numériques.</p>
+    <div class="container">
+      <div class="page-hero-panel reveal">
+        <p class="eyebrow" data-fr="Selected Work" data-en="Selected Work">Selected Work</p>
+        <h1 data-fr="Des projets lus comme des cas d’étude, pas comme une simple galerie." data-en="Projects treated like case studies, not just a gallery.">Des projets lus comme des cas d’étude, pas comme une simple galerie.</h1>
+        <p class="large-copy" data-fr="Chaque projet est présenté avec plus d’air, une meilleure hiérarchie et un niveau de lisibilité plus proche d’un studio premium." data-en="Each project is presented with more breathing room, stronger hierarchy and a level of clarity closer to a premium studio.">Chaque projet est présenté avec plus d’air, une meilleure hiérarchie et un niveau de lisibilité plus proche d’un studio premium.</p>
+      </div>
     </div>
   </section>
-
   <section class="section reveal">
-    <div class="container page-grid">
-      <a class="project-card" href="project-healthcare.html">
-        <div class="project-image healthcare"></div>
+    <div class="container projects-list">
+      <a class="project-card project-row" href="project-healthcare.html">
+        <div class="project-visual"></div>
         <div class="project-content">
-          <h2 data-fr="Infrastructure hospitalière" data-en="Healthcare infrastructure">Infrastructure hospitalière</h2>
-          <p data-fr="Coordination BIM, lisibilité technique et gestion d’un environnement complexe." data-en="BIM coordination, technical clarity, and management of a complex environment.">Coordination BIM, lisibilité technique et gestion d’un environnement complexe.</p>
-          <div class="project-tags"><span>BIM</span><span>Healthcare</span><span>Coordination</span></div>
+          <div class="tag-row"><span class="tag">Healthcare</span><span class="tag">BIM</span></div>
+          <h3 data-fr="Infrastructure hospitalière" data-en="Healthcare infrastructure">Infrastructure hospitalière</h3>
+          <p data-fr="Coordination BIM, cohérence documentaire et lecture technique sur un environnement hospitalier complexe." data-en="BIM coordination, document consistency and technical clarity within a complex healthcare environment.">Coordination BIM, cohérence documentaire et lecture technique sur un environnement hospitalier complexe.</p>
+          <span class="project-link" data-fr="Entrer dans le cas d’étude" data-en="Open case study">Entrer dans le cas d’étude</span>
         </div>
       </a>
-      <a class="project-card" href="project-transport.html">
-        <div class="project-image transport"></div>
+      <a class="project-card project-row" href="project-transport.html">
+        <div class="project-visual"></div>
         <div class="project-content">
-          <h2 data-fr="Infrastructure de transport" data-en="Transport infrastructure">Infrastructure de transport</h2>
-          <p data-fr="Projet demandant lisibilité technique, coordination multi-acteurs et rigueur dans l’organisation numérique." data-en="Project requiring technical clarity, multi-stakeholder coordination, and rigor in digital organization.">Projet demandant lisibilité technique, coordination multi-acteurs et rigueur dans l’organisation numérique.</p>
-          <div class="project-tags"><span>Infrastructure</span><span>Workflow</span><span>Delivery</span></div>
+          <div class="tag-row"><span class="tag">Transport</span><span class="tag">Delivery</span></div>
+          <h3 data-fr="Infrastructure de transport" data-en="Transport infrastructure">Infrastructure de transport</h3>
+          <p data-fr="Standards, méthode et robustesse des flux sur un projet d’infrastructure à forte coordination." data-en="Standards, method and robust information flows on a coordination-heavy infrastructure project.">Standards, méthode et robustesse des flux sur un projet d’infrastructure à forte coordination.</p>
+          <span class="project-link" data-fr="Entrer dans le cas d’étude" data-en="Open case study">Entrer dans le cas d’étude</span>
         </div>
       </a>
-      <a class="project-card" href="project-monaco.html">
-        <div class="project-image monaco"></div>
+      <a class="project-card project-row" href="project-monaco.html">
+        <div class="project-visual"></div>
         <div class="project-content">
-          <h2 data-fr="Tour & parking souterrain" data-en="Tower & underground parking">Tour & parking souterrain</h2>
-          <p data-fr="Projet architectural complexe mêlant enjeux de coordination, lisibilité technique et organisation numérique." data-en="Complex architectural project combining coordination, technical clarity, and digital organization.">Projet architectural complexe mêlant enjeux de coordination, lisibilité technique et organisation numérique.</p>
-          <div class="project-tags"><span>Architecture</span><span>BIM</span><span>Complexity</span></div>
+          <div class="tag-row"><span class="tag">High-rise</span><span class="tag">Coordination</span></div>
+          <h3 data-fr="Tour & parking souterrain" data-en="Tower & underground parking">Tour & parking souterrain</h3>
+          <p data-fr="Interface entre structure, enveloppe et contraintes spatiales sur un projet dense et exigeant." data-en="Interface between structure, envelope and spatial constraints on a dense and demanding project.">Interface entre structure, enveloppe et contraintes spatiales sur un projet dense et exigeant.</p>
+          <span class="project-link" data-fr="Entrer dans le cas d’étude" data-en="Open case study">Entrer dans le cas d’étude</span>
         </div>
       </a>
-      <a class="project-card" href="project-visualization.html">
-        <div class="project-image visualization"></div>
+      <a class="project-card project-row" href="project-visualization.html">
+        <div class="project-visual"></div>
         <div class="project-content">
-          <h2 data-fr="Visualisation et communication de projets" data-en="Project visualization and communication">Visualisation et communication de projets</h2>
-          <p data-fr="Travail autour de la mise en récit visuelle, de la lisibilité des projets et de leur communication." data-en="Work centered on visual storytelling, project legibility, and communication.">Travail autour de la mise en récit visuelle, de la lisibilité des projets et de leur communication.</p>
-          <div class="project-tags"><span>Visualization</span><span>Storytelling</span><span>Presentation</span></div>
+          <div class="tag-row"><span class="tag">Visualization</span><span class="tag">Communication</span></div>
+          <h3 data-fr="Visualisation et communication de projets" data-en="Project visualization and communication">Visualisation et communication de projets</h3>
+          <p data-fr="Un travail de mise en forme pour rendre les sujets techniques plus désirables et mieux compris." data-en="A communication-focused effort to make technical subjects more desirable and easier to understand.">Un travail de mise en forme pour rendre les sujets techniques plus désirables et mieux compris.</p>
+          <span class="project-link" data-fr="Entrer dans le cas d’étude" data-en="Open case study">Entrer dans le cas d’étude</span>
         </div>
       </a>
     </div>
   </section>
 </main>
 
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <p>© 2026 Clément El Hadri</p>
-    <p data-fr="Portfolio BIM / DATA / INNOVATION" data-en="BIM / DATA / INNOVATION portfolio">Portfolio BIM / DATA / INNOVATION</p>
-  </div>
-</footer>
-<script src="script.js"></script>
-
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-shell">
+        <p data-fr="Portfolio de Clément El Hadri — design éditorial, structure claire et approche premium." data-en="Portfolio of Clément El Hadri — editorial design, clear structure and premium positioning.">Portfolio de Clément El Hadri — design éditorial, structure claire et approche premium.</p>
+        <p data-fr="Mis à jour en 2026 — HTML, CSS, JavaScript" data-en="Updated in 2026 — HTML, CSS, JavaScript">Mis à jour en 2026 — HTML, CSS, JavaScript</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,105 +1,95 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css" />
-
-<title>Tour & parking souterrain — Clément El Hadri</title>
-<meta name="description" content="Projet architectural complexe mêlant coordination BIM, lisibilité technique et organisation numérique." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tour & parking souterrain — Clément El Hadri</title>
+  <meta name="description" content="Une opération dense où les interfaces entre structure, architecture et sous-sol exigent une lecture technique très rigoureuse." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-<header class="site-header">
-  <div class="container nav">
-    <a href="index.html" class="logo">Clément El Hadri<small>BIM • Data • Digital Construction</small></a>
-    <button class="nav-toggle" aria-label="Ouvrir le menu">
-      <span></span><span></span><span></span>
-    </button>
-    <nav class="nav-menu">
-      <a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a>
-      <a href="projects.html" data-fr="Projets" data-en="Projects">Projets</a>
-      <a href="thinking.html" data-fr="Réflexion" data-en="Thinking">Réflexion</a>
-      <a href="index.html#contact" data-fr="Contact" data-en="Contact">Contact</a>
-      <button class="lang-switch" id="langSwitch" aria-label="Changer la langue"><span>FR</span> | <span>EN</span></button>
-    </nav>
-  </div>
-</header>
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-shell">
+        <a href="index.html" class="logo">Clément El Hadri</a>
+        <button class="nav-toggle" aria-label="Ouvrir le menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav-menu">
+          <a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a>
+          <a href="projects.html" data-fr="Projets" data-en="Selected Work">Projets</a>
+          <a href="thinking.html" data-fr="Réflexion" data-en="Thinking">Réflexion</a>
+          <a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
+          <button class="lang-switch" id="langSwitch" aria-label="Changer la langue"><span>FR</span> / <span>EN</span></button>
+          <a class="nav-cta" href="mailto:contact@example.com" data-fr="Prendre contact" data-en="Book a call">Prendre contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
 
 <main>
   <section class="page-hero">
-    <div class="container page-hero-card reveal">
-      <a href="projects.html" class="back-link" data-fr="← Retour aux projets" data-en="← Back to projects">← Retour aux projets</a>
-      <p class="eyebrow" data-fr="Projet" data-en="Project">Projet</p>
-      <h1 data-fr="Tour & parking souterrain" data-en="Tower & underground parking">Tour & parking souterrain</h1>
-      <p class="hero-text" data-fr="Projet architectural complexe mêlant enjeux de coordination, lisibilité technique et organisation numérique." data-en="Complex architectural project combining coordination, technical clarity, and digital organization.">Projet architectural complexe mêlant enjeux de coordination, lisibilité technique et organisation numérique.</p>
+    <div class="container">
+      <div class="page-hero-panel reveal">
+        <p class="eyebrow">High-rise / Coordination</p>
+        <h1 data-fr="Tour & parking souterrain" data-en="Tower & underground parking">Tour & parking souterrain</h1>
+        <p class="large-copy" data-fr="Une opération dense où les interfaces entre structure, architecture et sous-sol exigent une lecture technique très rigoureuse." data-en="A dense operation where interfaces between structure, architecture and basement levels require highly rigorous technical reading.">Une opération dense où les interfaces entre structure, architecture et sous-sol exigent une lecture technique très rigoureuse.</p>
+        <p class="hero-note" data-fr="Le design met ici l’accent sur la tension entre densité et clarté." data-en="The design here emphasizes the tension between density and clarity.">Le design met ici l’accent sur la tension entre densité et clarté.</p>
+      </div>
     </div>
   </section>
-
   <section class="section reveal">
-    <div class="container project-layout">
-      <div class="project-main">
-        <article class="project-block">
-          <h2 data-fr="Contexte" data-en="Context">Contexte</h2>
-          <p data-fr="Contexte de projet dense avec plusieurs sujets de coordination et une nécessité de garder un système d’information cohérent et compréhensible." data-en="Dense project context with multiple coordination topics and a need to keep the information system coherent and understandable.">Contexte de projet dense avec plusieurs sujets de coordination et une nécessité de garder un système d’information cohérent et compréhensible.</p>
+    <div class="container detail-grid">
+      <div class="detail-stack">
+        <article class="detail-card">
+          <span class="small-caps" data-fr="Contexte" data-en="Context">Contexte</span>
+          <p data-fr="Projet vertical avec contraintes spatiales fortes, coordination complexe et enjeux d’intégration entre plusieurs systèmes." data-en="Vertical project with tight spatial constraints, complex coordination and integration challenges across multiple systems.">Projet vertical avec contraintes spatiales fortes, coordination complexe et enjeux d’intégration entre plusieurs systèmes.</p>
         </article>
-        <article class="project-block">
-          <h2 data-fr="Rôle" data-en="Role">Rôle</h2>
-          <p data-fr="Participation à la structuration BIM, à l’organisation du projet et à la lecture plus claire des échanges techniques." data-en="Contribution to BIM structuring, project organization, and clearer reading of technical exchanges.">Participation à la structuration BIM, à l’organisation du projet et à la lecture plus claire des échanges techniques.</p>
+        <article class="detail-card">
+          <span class="small-caps" data-fr="Rôle" data-en="Role">Rôle</span>
+          <p data-fr="Support BIM, contrôle des interfaces, amélioration de la lecture des conflits et structuration de la réponse projet." data-en="BIM support, interface control, improved conflict readability and structured project responses.">Support BIM, contrôle des interfaces, amélioration de la lecture des conflits et structuration de la réponse projet.</p>
         </article>
-        <article class="project-block">
-          <h2 data-fr="Problème technique" data-en="Technical challenge">Problème technique</h2>
-          <p data-fr="Le projet nécessitait une approche capable de gérer la complexité spatiale et organisationnelle sans perdre la maîtrise des flux d’information." data-en="The project required an approach capable of handling spatial and organizational complexity without losing control over information flows.">Le projet nécessitait une approche capable de gérer la complexité spatiale et organisationnelle sans perdre la maîtrise des flux d’information.</p>
+        <article class="detail-card">
+          <span class="small-caps" data-fr="Problème technique" data-en="Technical problem">Problème technique</span>
+          <p data-fr="Les collisions et contradictions deviennent rapidement coûteuses lorsque les zones critiques sont compactes." data-en="Collisions and contradictions quickly become costly when critical zones are highly compact.">Les collisions et contradictions deviennent rapidement coûteuses lorsque les zones critiques sont compactes.</p>
         </article>
-        <article class="project-block">
-          <h2 data-fr="Solution BIM" data-en="BIM solution">Solution BIM</h2>
-          <p data-fr="Travail sur la structuration du modèle, l’organisation des échanges et la mise en cohérence des éléments numériques utiles à la coordination." data-en="Work on model structuring, exchange organization, and alignment of digital elements useful for coordination.">Travail sur la structuration du modèle, l’organisation des échanges et la mise en cohérence des éléments numériques utiles à la coordination.</p>
+        <article class="detail-card">
+          <span class="small-caps" data-fr="Réponse apportée" data-en="Response">Réponse apportée</span>
+          <p data-fr="Travail de clarification des zones sensibles, hiérarchisation des priorités de coordination et rendu plus lisible des arbitrages." data-en="Clarifying sensitive areas, prioritizing coordination issues and making design decisions easier to read.">Travail de clarification des zones sensibles, hiérarchisation des priorités de coordination et rendu plus lisible des arbitrages.</p>
         </article>
-        <article class="project-block">
-          <h2 data-fr="Résultat" data-en="Outcome">Résultat</h2>
-          <p data-fr="Projet mieux lisible techniquement, coordination facilitée et base numérique plus cohérente pour les échanges." data-en="A more technically readable project, easier coordination, and a more coherent digital base for exchanges.">Projet mieux lisible techniquement, coordination facilitée et base numérique plus cohérente pour les échanges.</p>
-        </article>
-        <article class="project-block">
-          <h2 data-fr="Visuels" data-en="Visuals">Visuels</h2>
-          <div class="project-gallery">
-            <div class="gallery-item"></div>
-            <div class="gallery-item"></div>
-          </div>
+        <article class="detail-card">
+          <span class="small-caps" data-fr="Résultat" data-en="Outcome">Résultat</span>
+          <p data-fr="Une coordination plus maîtrisée sur les zones critiques et une communication plus crédible autour des arbitrages techniques." data-en="A more controlled coordination process in critical zones and more credible communication around technical decisions.">Une coordination plus maîtrisée sur les zones critiques et une communication plus crédible autour des arbitrages techniques.</p>
+          <ul>
+            <li data-fr="Vision plus claire des interfaces prioritaires" data-en="Clearer view of priority interfaces">Vision plus claire des interfaces prioritaires</li>
+            <li data-fr="Moins d’ambiguïté dans les arbitrages" data-en="Less ambiguity in decisions">Moins d’ambiguïté dans les arbitrages</li>
+            <li data-fr="Lecture plus solide des contraintes spatiales" data-en="Stronger reading of spatial constraints">Lecture plus solide des contraintes spatiales</li>
+          </ul>
         </article>
       </div>
-      <aside class="project-sidebar reveal">
-        <div class="sidebar-card">
-          <h3 data-fr="Outils" data-en="Tools">Outils</h3>
-          <ul class="sidebar-list">
-            ['<li>Revit</li>', '<li>Coordination BIM</li>', '<li>Model Structuring</li>', '<li>Digital Organization</li>']
-          </ul>
-          <div class="project-meta">
-            <div class="meta-row">
-              <strong data-fr="Focus" data-en="Focus">Focus</strong>
-              <p data-fr="Lisibilité technique et organisation numérique." data-en="Technical clarity and digital organization.">Lisibilité technique et organisation numérique.</p>
-            </div>
-            <div class="meta-row">
-              <strong data-fr="Apport" data-en="Contribution">Apport</strong>
-              <p data-fr="Créer une base de coordination plus stable." data-en="Create a more stable coordination base.">Créer une base de coordination plus stable.</p>
-            </div>
-          </div>
+      <aside class="visual-panel">
+        <div class="visual-label">Spatial Tension</div>
+        <div class="visual-box">
+          <strong data-fr="Outils" data-en="Tools">Outils</strong>
+          <p>Revit · clash detection · coordination matrices · issue review</p>
         </div>
       </aside>
     </div>
   </section>
 </main>
 
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <p>© 2026 Clément El Hadri</p>
-    <p data-fr="Portfolio BIM / DATA / INNOVATION" data-en="BIM / DATA / INNOVATION portfolio">Portfolio BIM / DATA / INNOVATION</p>
-  </div>
-</footer>
-<script src="script.js"></script>
-
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-shell">
+        <p data-fr="Portfolio de Clément El Hadri — design éditorial, structure claire et approche premium." data-en="Portfolio of Clément El Hadri — editorial design, clear structure and premium positioning.">Portfolio de Clément El Hadri — design éditorial, structure claire et approche premium.</p>
+        <p data-fr="Mis à jour en 2026 — HTML, CSS, JavaScript" data-en="Updated in 2026 — HTML, CSS, JavaScript">Mis à jour en 2026 — HTML, CSS, JavaScript</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
+

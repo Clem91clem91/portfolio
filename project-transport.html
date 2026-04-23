@@ -1,105 +1,95 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css" />
-
-<title>Infrastructure de transport — Clément El Hadri</title>
-<meta name="description" content="Projet d’infrastructure de transport centré sur la coordination BIM, les interfaces et la lisibilité des flux." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Infrastructure de transport — Clément El Hadri</title>
+  <meta name="description" content="Un projet où la qualité du workflow, des standards et de la coordination conditionne directement la robustesse des livrables." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-<header class="site-header">
-  <div class="container nav">
-    <a href="index.html" class="logo">Clément El Hadri<small>BIM • Data • Digital Construction</small></a>
-    <button class="nav-toggle" aria-label="Ouvrir le menu">
-      <span></span><span></span><span></span>
-    </button>
-    <nav class="nav-menu">
-      <a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a>
-      <a href="projects.html" data-fr="Projets" data-en="Projects">Projets</a>
-      <a href="thinking.html" data-fr="Réflexion" data-en="Thinking">Réflexion</a>
-      <a href="index.html#contact" data-fr="Contact" data-en="Contact">Contact</a>
-      <button class="lang-switch" id="langSwitch" aria-label="Changer la langue"><span>FR</span> | <span>EN</span></button>
-    </nav>
-  </div>
-</header>
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-shell">
+        <a href="index.html" class="logo">Clément El Hadri</a>
+        <button class="nav-toggle" aria-label="Ouvrir le menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav-menu">
+          <a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a>
+          <a href="projects.html" data-fr="Projets" data-en="Selected Work">Projets</a>
+          <a href="thinking.html" data-fr="Réflexion" data-en="Thinking">Réflexion</a>
+          <a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
+          <button class="lang-switch" id="langSwitch" aria-label="Changer la langue"><span>FR</span> / <span>EN</span></button>
+          <a class="nav-cta" href="mailto:contact@example.com" data-fr="Prendre contact" data-en="Book a call">Prendre contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
 
 <main>
   <section class="page-hero">
-    <div class="container page-hero-card reveal">
-      <a href="projects.html" class="back-link" data-fr="← Retour aux projets" data-en="← Back to projects">← Retour aux projets</a>
-      <p class="eyebrow" data-fr="Projet" data-en="Project">Projet</p>
-      <h1 data-fr="Infrastructure de transport" data-en="Transport infrastructure">Infrastructure de transport</h1>
-      <p class="hero-text" data-fr="Projet lié au transport, impliquant plusieurs logiques métier et des contraintes importantes de coordination." data-en="Transport-related project involving multiple discipline logics and demanding coordination constraints.">Projet lié au transport, impliquant plusieurs logiques métier et des contraintes importantes de coordination.</p>
+    <div class="container">
+      <div class="page-hero-panel reveal">
+        <p class="eyebrow">Transport / Delivery</p>
+        <h1 data-fr="Infrastructure de transport" data-en="Transport infrastructure">Infrastructure de transport</h1>
+        <p class="large-copy" data-fr="Un projet où la qualité du workflow, des standards et de la coordination conditionne directement la robustesse des livrables." data-en="A project where workflow quality, standards and coordination directly shape the robustness of the deliverables.">Un projet où la qualité du workflow, des standards et de la coordination conditionne directement la robustesse des livrables.</p>
+        <p class="hero-note" data-fr="Présentation plus proche d’un site studio que d’une fiche projet classique." data-en="Presented more like a studio website than a conventional project sheet.">Présentation plus proche d’un site studio que d’une fiche projet classique.</p>
+      </div>
     </div>
   </section>
-
   <section class="section reveal">
-    <div class="container project-layout">
-      <div class="project-main">
-        <article class="project-block">
-          <h2 data-fr="Contexte" data-en="Context">Contexte</h2>
-          <p data-fr="Environnement de projet complexe où la clarté des responsabilités, des échanges et des interfaces était essentielle pour maintenir la cohérence du système." data-en="Complex project environment where responsibility, exchange, and interface clarity were essential to maintain system coherence.">Environnement de projet complexe où la clarté des responsabilités, des échanges et des interfaces était essentielle pour maintenir la cohérence du système.</p>
+    <div class="container detail-grid">
+      <div class="detail-stack">
+        <article class="detail-card">
+          <span class="small-caps" data-fr="Contexte" data-en="Context">Contexte</span>
+          <p data-fr="Projet d’infrastructure mobilisant plusieurs intervenants, niveaux d’information et exigences de continuité documentaire." data-en="Infrastructure project involving multiple contributors, information layers and document continuity requirements.">Projet d’infrastructure mobilisant plusieurs intervenants, niveaux d’information et exigences de continuité documentaire.</p>
         </article>
-        <article class="project-block">
-          <h2 data-fr="Rôle" data-en="Role">Rôle</h2>
-          <p data-fr="Contribution à la structuration BIM, à la lisibilité du projet et à l’organisation des échanges techniques." data-en="Contribution to BIM structuring, project readability, and the organization of technical exchanges.">Contribution à la structuration BIM, à la lisibilité du projet et à l’organisation des échanges techniques.</p>
+        <article class="detail-card">
+          <span class="small-caps" data-fr="Rôle" data-en="Role">Rôle</span>
+          <p data-fr="Mise en cohérence des méthodes, cadrage BIM et amélioration de la lisibilité des flux projet." data-en="Method alignment, BIM framing and improved readability of project information flows.">Mise en cohérence des méthodes, cadrage BIM et amélioration de la lisibilité des flux projet.</p>
         </article>
-        <article class="project-block">
-          <h2 data-fr="Problème technique" data-en="Technical challenge">Problème technique</h2>
-          <p data-fr="Le défi portait sur la gestion des interfaces, la cohérence des informations et la nécessité d’une coordination suffisamment robuste pour accompagner la complexité du projet." data-en="The challenge involved interface management, information consistency, and the need for coordination robust enough to support project complexity.">Le défi portait sur la gestion des interfaces, la cohérence des informations et la nécessité d’une coordination suffisamment robuste pour accompagner la complexité du projet.</p>
+        <article class="detail-card">
+          <span class="small-caps" data-fr="Problème technique" data-en="Technical problem">Problème technique</span>
+          <p data-fr="Lorsque les standards sont hétérogènes, les retouches s’accumulent et la transmission du projet devient fragile." data-en="When standards are heterogeneous, rework accumulates and project handover becomes fragile.">Lorsque les standards sont hétérogènes, les retouches s’accumulent et la transmission du projet devient fragile.</p>
         </article>
-        <article class="project-block">
-          <h2 data-fr="Solution BIM" data-en="BIM solution">Solution BIM</h2>
-          <p data-fr="Approche centrée sur la structure du workflow, la clarification des responsabilités, la qualité des modèles et la lisibilité des interactions." data-en="Approach centered on workflow structure, responsibility clarification, model quality, and interaction readability.">Approche centrée sur la structure du workflow, la clarification des responsabilités, la qualité des modèles et la lisibilité des interactions.</p>
+        <article class="detail-card">
+          <span class="small-caps" data-fr="Réponse apportée" data-en="Response">Réponse apportée</span>
+          <p data-fr="Renforcement des méthodes communes, meilleure articulation entre production et coordination, clarification des attendus de livraison." data-en="Reinforcing shared methods, improving the articulation between production and coordination, and clarifying delivery expectations.">Renforcement des méthodes communes, meilleure articulation entre production et coordination, clarification des attendus de livraison.</p>
         </article>
-        <article class="project-block">
-          <h2 data-fr="Résultat" data-en="Outcome">Résultat</h2>
-          <p data-fr="Meilleure compréhension des flux projet, environnement BIM plus clair et base de coordination plus fiable." data-en="Better understanding of project flows, a clearer BIM environment, and a more reliable coordination base.">Meilleure compréhension des flux projet, environnement BIM plus clair et base de coordination plus fiable.</p>
-        </article>
-        <article class="project-block">
-          <h2 data-fr="Visuels" data-en="Visuals">Visuels</h2>
-          <div class="project-gallery">
-            <div class="gallery-item"></div>
-            <div class="gallery-item"></div>
-          </div>
+        <article class="detail-card">
+          <span class="small-caps" data-fr="Résultat" data-en="Outcome">Résultat</span>
+          <p data-fr="Des livrables plus cohérents, une lecture projet plus stable et moins de friction entre contributeurs." data-en="More coherent deliverables, a more stable project reading and less friction between contributors.">Des livrables plus cohérents, une lecture projet plus stable et moins de friction entre contributeurs.</p>
+          <ul>
+            <li data-fr="Méthode plus homogène entre équipes" data-en="More homogeneous methods across teams">Méthode plus homogène entre équipes</li>
+            <li data-fr="Circulation d’information plus lisible" data-en="Clearer information flow">Circulation d’information plus lisible</li>
+            <li data-fr="Robustesse accrue au moment de la livraison" data-en="Greater robustness at delivery stage">Robustesse accrue au moment de la livraison</li>
+          </ul>
         </article>
       </div>
-      <aside class="project-sidebar reveal">
-        <div class="sidebar-card">
-          <h3 data-fr="Outils" data-en="Tools">Outils</h3>
-          <ul class="sidebar-list">
-            ['<li>Revit</li>', '<li>Navisworks</li>', '<li>BIM Workflow</li>', '<li>Project Coordination</li>']
-          </ul>
-          <div class="project-meta">
-            <div class="meta-row">
-              <strong data-fr="Focus" data-en="Focus">Focus</strong>
-              <p data-fr="Gestion des interfaces et robustesse des échanges." data-en="Interface management and robust exchanges.">Gestion des interfaces et robustesse des échanges.</p>
-            </div>
-            <div class="meta-row">
-              <strong data-fr="Apport" data-en="Contribution">Apport</strong>
-              <p data-fr="Rendre le système plus lisible et mieux coordonné." data-en="Make the system clearer and better coordinated.">Rendre le système plus lisible et mieux coordonné.</p>
-            </div>
-          </div>
+      <aside class="visual-panel">
+        <div class="visual-label">Workflow Focus</div>
+        <div class="visual-box">
+          <strong data-fr="Outils" data-en="Tools">Outils</strong>
+          <p>Revit · BIM execution logic · coordination reviews · issue tracking</p>
         </div>
       </aside>
     </div>
   </section>
 </main>
 
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <p>© 2026 Clément El Hadri</p>
-    <p data-fr="Portfolio BIM / DATA / INNOVATION" data-en="BIM / DATA / INNOVATION portfolio">Portfolio BIM / DATA / INNOVATION</p>
-  </div>
-</footer>
-<script src="script.js"></script>
-
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-shell">
+        <p data-fr="Portfolio de Clément El Hadri — design éditorial, structure claire et approche premium." data-en="Portfolio of Clément El Hadri — editorial design, clear structure and premium positioning.">Portfolio de Clément El Hadri — design éditorial, structure claire et approche premium.</p>
+        <p data-fr="Mis à jour en 2026 — HTML, CSS, JavaScript" data-en="Updated in 2026 — HTML, CSS, JavaScript">Mis à jour en 2026 — HTML, CSS, JavaScript</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
+

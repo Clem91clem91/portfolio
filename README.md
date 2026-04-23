@@ -1,28 +1,32 @@
-# Portfolio redesign
+# Portfolio redesign — Shader-inspired direction
 
-Refonte complète du site statique en HTML / CSS / JS avec un design plus professionnel.
+Cette version reprend entièrement le site dans une direction beaucoup plus proche du langage visuel de shader.se :
 
-## Ce qui a été refait
-- Nouvelle direction visuelle plus sobre et plus premium
-- Page d'accueil repensée
-- Pages projets harmonisées
-- Page réflexion modernisée
-- Navigation mobile améliorée
-- Bilingue FR / EN conservé
-- Formulaire de contact visuel conservé
+- grande typographie éditoriale
+- navigation en pilules arrondies
+- grands panneaux avec beaucoup d’espace
+- hiérarchie visuelle plus nette
+- cartes projets plus premium
+- pages cas d’étude plus cohérentes
+- palette claire, sobre et professionnelle
 
-## Points à personnaliser
+## Fichiers
+
+- index.html
+- projects.html
+- thinking.html
+- project-healthcare.html
+- project-transport.html
+- project-monaco.html
+- project-visualization.html
+- style.css
+- script.js
+
+## À remplacer avant mise en ligne
+
 - `contact@example.com`
 - `linkedin.com/in/tonprofil`
-- Les visuels de projet sont encore des placeholders graphiques CSS
 
-## Fichiers principaux
-- `index.html`
-- `projects.html`
-- `thinking.html`
-- `project-healthcare.html`
-- `project-transport.html`
-- `project-monaco.html`
-- `project-visualization.html`
-- `style.css`
-- `script.js`
+## Note
+
+Le design est **inspiré** du site de référence demandé, mais réécrit proprement pour ton contenu et ta structure existante.

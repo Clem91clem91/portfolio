@@ -1,178 +1,169 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css" />
-
-<title>Clément El Hadri — BIM. DATA. INNOVATION.</title>
-<meta name="description" content="Portfolio professionnel de Clément El Hadri, BIM Manager / Architectural Technology Engineer." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clément El Hadri — Portfolio</title>
+  <meta name="description" content="Portfolio de Clément El Hadri, BIM Manager et Architectural Technology Engineer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-<header class="site-header">
-  <div class="container nav">
-    <a href="index.html" class="logo">Clément El Hadri<small>BIM • Data • Digital Construction</small></a>
-    <button class="nav-toggle" aria-label="Ouvrir le menu">
-      <span></span><span></span><span></span>
-    </button>
-    <nav class="nav-menu">
-      <a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a>
-      <a href="projects.html" data-fr="Projets" data-en="Projects">Projets</a>
-      <a href="thinking.html" data-fr="Réflexion" data-en="Thinking">Réflexion</a>
-      <a href="index.html#contact" data-fr="Contact" data-en="Contact">Contact</a>
-      <button class="lang-switch" id="langSwitch" aria-label="Changer la langue"><span>FR</span> | <span>EN</span></button>
-    </nav>
-  </div>
-</header>
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-shell">
+        <a href="index.html" class="logo">Clément El Hadri</a>
+        <button class="nav-toggle" aria-label="Ouvrir le menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav-menu">
+          <a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a>
+          <a href="projects.html" data-fr="Projets" data-en="Selected Work">Projets</a>
+          <a href="thinking.html" data-fr="Réflexion" data-en="Thinking">Réflexion</a>
+          <a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
+          <button class="lang-switch" id="langSwitch" aria-label="Changer la langue"><span>FR</span> / <span>EN</span></button>
+          <a class="nav-cta" href="mailto:contact@example.com" data-fr="Prendre contact" data-en="Book a call">Prendre contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
 
 <main>
   <section class="hero">
-    <div class="container hero-shell reveal">
-      <div class="hero-copy">
-        <p class="eyebrow" data-fr="Portfolio professionnel" data-en="Professional portfolio">Portfolio professionnel</p>
-        <h1 data-fr="BIM Manager & Architectural Technology Engineer" data-en="BIM Manager & Architectural Technology Engineer">BIM Manager & Architectural Technology Engineer</h1>
-        <p class="hero-text" data-fr="Je structure la complexité technique à travers le BIM, la logique de donnée et des workflows numériques plus lisibles, robustes et utiles." data-en="I structure technical complexity through BIM, data logic and digital workflows that are clearer, more robust and more useful.">Je structure la complexité technique à travers le BIM, la logique de donnée et des workflows numériques plus lisibles, robustes et utiles.</p>
-        <div class="hero-actions">
-          <a href="projects.html" class="btn btn-primary" data-fr="Voir les projets" data-en="View projects">Voir les projets</a>
-          <a href="#contact" class="btn btn-secondary" data-fr="Me contacter" data-en="Get in touch">Me contacter</a>
+    <div class="container">
+      <div class="hero-panel reveal">
+        <div class="hero-copy">
+          <p class="eyebrow" data-fr="Portfolio sélectionné" data-en="Selected portfolio">Portfolio sélectionné</p>
+          <h1 data-fr="BIM, data et exécution numérique avec une lecture plus premium du projet." data-en="BIM, data and digital delivery with a more premium reading of the project.">BIM, data et exécution numérique avec une lecture plus premium du projet.</h1>
+          <p class="large-copy" data-fr="Je conçois des systèmes de travail plus lisibles pour les projets complexes : coordination BIM, logique de donnée, standardisation, communication technique et structuration des décisions." data-en="I design clearer working systems for complex projects: BIM coordination, data logic, standardization, technical communication and decision structuring.">Je conçois des systèmes de travail plus lisibles pour les projets complexes : coordination BIM, logique de donnée, standardisation, communication technique et structuration des décisions.</p>
+          <div class="hero-actions">
+            <a href="projects.html" class="btn btn-primary" data-fr="Voir les projets" data-en="Browse selected work">Voir les projets</a>
+            <a href="#contact" class="btn btn-secondary" data-fr="Me contacter" data-en="Discuss a project">Me contacter</a>
+          </div>
         </div>
-        <div class="hero-note">
-          <span data-fr="Coordination BIM" data-en="BIM coordination">Coordination BIM</span>
-          <span data-fr="Structuration de données" data-en="Data structuring">Structuration de données</span>
-          <span data-fr="Méthodes numériques" data-en="Digital methods">Méthodes numériques</span>
-        </div>
+        <aside class="hero-aside">
+          <div class="metric-card">
+            <span class="small-caps" data-fr="Positionnement" data-en="Positioning">Positionnement</span>
+            <strong data-fr="Structure + Clarté" data-en="Structure + Clarity">Structure + Clarté</strong>
+            <span data-fr="Une approche plus direction artistique / studio que portfolio technique classique." data-en="A more studio-like / art-directed approach than a conventional technical portfolio.">Une approche plus direction artistique / studio que portfolio technique classique.</span>
+          </div>
+          <div class="mini-panel">
+            <span class="small-caps" data-fr="Ce site met en avant" data-en="This site highlights">Ce site met en avant</span>
+            <ul>
+              <li><span data-fr="Coordination BIM" data-en="BIM coordination">Coordination BIM</span><strong>01</strong></li>
+              <li><span data-fr="Structuration de la donnée" data-en="Data structuring">Structuration de la donnée</span><strong>02</strong></li>
+              <li><span data-fr="Communication projet" data-en="Project communication">Communication projet</span><strong>03</strong></li>
+            </ul>
+          </div>
+        </aside>
       </div>
-      <aside class="hero-panel">
-        <span class="panel-label" data-fr="Positionnement" data-en="Positioning">Positionnement</span>
-        <h2 data-fr="Une approche plus claire, plus structurée, plus fiable." data-en="A clearer, more structured, more reliable approach.">Une approche plus claire, plus structurée, plus fiable.</h2>
-        <p data-fr="J’interviens sur les projets où la coordination, la qualité de l’information et la lisibilité du système deviennent stratégiques." data-en="I work on projects where coordination, information quality, and system readability become strategic.">J’interviens sur les projets où la coordination, la qualité de l’information et la lisibilité du système deviennent stratégiques.</p>
-        <div class="hero-metrics">
-          <div class="metric"><strong>BIM Management</strong><span data-fr="Gouvernance, standards et cohérence du modèle" data-en="Governance, standards, and model consistency">Gouvernance, standards et cohérence du modèle</span></div>
-          <div class="metric"><strong>Data & Workflow</strong><span data-fr="Logique d’information, contrôle et fluidité des échanges" data-en="Information logic, control, and workflow clarity">Logique d’information, contrôle et fluidité des échanges</span></div>
-          <div class="metric"><strong>Digital Construction</strong><span data-fr="Interface entre conception, coordination et exécution" data-en="Interface between design, coordination, and delivery">Interface entre conception, coordination et exécution</span></div>
-        </div>
-      </aside>
     </div>
   </section>
 
-  <section class="proof-strip reveal">
+  <section class="proof-band reveal">
     <div class="container proof-grid">
-      <div class="proof-item">
-        <span class="proof-number">BIM</span>
-        <span class="proof-label" data-fr="Coordination & structuration" data-en="Coordination & structuring">Coordination & structuration</span>
-      </div>
-      <div class="proof-item">
-        <span class="proof-number">DATA</span>
-        <span class="proof-label" data-fr="Logique, contrôle, lisibilité" data-en="Logic, control, clarity">Logique, contrôle, lisibilité</span>
-      </div>
-      <div class="proof-item">
-        <span class="proof-number">INNOVATION</span>
-        <span class="proof-label" data-fr="Méthodes, outils, réflexion" data-en="Methods, tools, thinking">Méthodes, outils, réflexion</span>
-      </div>
+      <div class="proof-item"><strong>BIM</strong><span data-fr="Coordination, standards, gouvernance de modèle" data-en="Coordination, standards, model governance">Coordination, standards, gouvernance de modèle</span></div>
+      <div class="proof-item"><strong>DATA</strong><span data-fr="Lisibilité, contrôle, logique d’information" data-en="Clarity, control, information logic">Lisibilité, contrôle, logique d’information</span></div>
+      <div class="proof-item"><strong>WORKFLOW</strong><span data-fr="Méthodes stables et transmission des process" data-en="Stable methods and process transmission">Méthodes stables et transmission des process</span></div>
+      <div class="proof-item"><strong>DELIVERY</strong><span data-fr="Supports plus crédibles pour décider et livrer" data-en="More credible support for decision-making and delivery">Supports plus crédibles pour décider et livrer</span></div>
     </div>
   </section>
 
-  <section id="about" class="section reveal">
+  <section class="section reveal" id="about">
     <div class="container section-grid">
       <div>
         <p class="section-tag" data-fr="À propos" data-en="About">À propos</p>
-        <h2 data-fr="Un profil technique orienté structure, méthode et décision" data-en="A technical profile focused on structure, method and decision-making">Un profil technique orienté structure, méthode et décision</h2>
+        <h2 data-fr="Un profil technique avec une vraie exigence de forme." data-en="A technical profile with a real demand for form.">Un profil technique avec une vraie exigence de forme.</h2>
       </div>
-      <div class="quote-box">
-        <p data-fr="Mon travail consiste à rendre un projet plus lisible techniquement, plus cohérent dans ses échanges et plus maîtrisé dans sa logique numérique. Au-delà de la production de modèles, je cherche à structurer l’information et à clarifier les systèmes." data-en="My work is about making a project more technically readable, more coherent in its exchanges and more controlled in its digital logic. Beyond model production, I focus on structuring information and clarifying systems.">Mon travail consiste à rendre un projet plus lisible techniquement, plus cohérent dans ses échanges et plus maîtrisé dans sa logique numérique. Au-delà de la production de modèles, je cherche à structurer l’information et à clarifier les systèmes.</p>
+      <div class="split-copy">
+        <p class="large-copy" data-fr="Mon travail ne consiste pas seulement à modéliser ou coordonner. Il consiste à rendre le projet plus intelligible : pour les équipes, pour la production et pour la décision." data-en="My work is not only about modeling or coordinating. It is about making the project more intelligible: for teams, for production and for decision-making.">Mon travail ne consiste pas seulement à modéliser ou coordonner. Il consiste à rendre le projet plus intelligible : pour les équipes, pour la production et pour la décision.</p>
+        <p data-fr="J’interviens à l’interface entre architecture, ingénierie, outils numériques et logique d’organisation. Cette version du site assume une direction plus éditoriale et plus haut de gamme, avec moins d’effets gratuits et plus de hiérarchie visuelle." data-en="I work at the intersection of architecture, engineering, digital tools and organizational logic. This site version embraces a more editorial and higher-end direction, with fewer gratuitous effects and more visual hierarchy.">J’interviens à l’interface entre architecture, ingénierie, outils numériques et logique d’organisation. Cette version du site assume une direction plus éditoriale et plus haut de gamme, avec moins d’effets gratuits et plus de hiérarchie visuelle.</p>
       </div>
     </div>
   </section>
 
-  <section id="what-i-bring" class="section reveal">
+  <section class="section reveal">
     <div class="container">
       <div class="section-head">
         <div>
-          <p class="section-tag" data-fr="Valeur apportée" data-en="What I bring">Valeur apportée</p>
-          <h2 data-fr="Ce que j’apporte à un projet" data-en="What I bring to a project">Ce que j’apporte à un projet</h2>
+          <p class="section-tag" data-fr="Expertise" data-en="Capabilities">Expertise</p>
+          <h2 data-fr="Ce que j’apporte concrètement à un projet." data-en="What I concretely bring to a project.">Ce que j’apporte concrètement à un projet.</h2>
         </div>
       </div>
-      <div class="card-grid">
-        <article class="card">
+      <div class="services-grid">
+        <article class="service-card">
           <h3 data-fr="Structurer la complexité" data-en="Structuring complexity">Structurer la complexité</h3>
-          <p data-fr="Transformer des sujets techniques complexes en logique claire, exploitable et actionnable." data-en="Turning complex technical topics into clear, usable and actionable logic.">Transformer des sujets techniques complexes en logique claire, exploitable et actionnable.</p>
+          <p data-fr="Clarifier des sujets techniques denses pour les rendre exploitables, transmissibles et pilotables." data-en="Clarifying dense technical topics so they become usable, transferable and manageable.">Clarifier des sujets techniques denses pour les rendre exploitables, transmissibles et pilotables.</p>
         </article>
-        <article class="card">
+        <article class="service-card">
           <h3 data-fr="Fiabiliser les workflows" data-en="Making workflows reliable">Fiabiliser les workflows</h3>
-          <p data-fr="Améliorer la cohérence des méthodes, des échanges et de la structure d’information." data-en="Improving the consistency of methods, exchanges and information structure.">Améliorer la cohérence des méthodes, des échanges et de la structure d’information.</p>
+          <p data-fr="Réduire la friction entre outils, équipes et niveaux d’information par des méthodes plus solides." data-en="Reducing friction between tools, teams and information layers through stronger methods.">Réduire la friction entre outils, équipes et niveaux d’information par des méthodes plus solides.</p>
         </article>
-        <article class="card">
-          <h3 data-fr="Relier technique et vision" data-en="Connecting technique and vision">Relier technique et vision</h3>
-          <p data-fr="Utiliser les outils numériques comme leviers de pilotage, pas seulement comme supports de production." data-en="Using digital tools as steering levers, not only as production supports.">Utiliser les outils numériques comme leviers de pilotage, pas seulement comme supports de production.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="expertise" class="section reveal">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <p class="section-tag" data-fr="Expertise" data-en="Core expertise">Expertise</p>
-          <h2 data-fr="Domaines clés" data-en="Core expertise">Domaines clés</h2>
-        </div>
-      </div>
-      <div class="card-grid expertise-grid">
-        <article class="card">
-          <h3>BIM Management</h3>
-          <p data-fr="Coordination, standards, structuration des modèles et gouvernance de l'information." data-en="Coordination, standards, model structuring and information governance.">Coordination, standards, structuration des modèles et gouvernance de l'information.</p>
-        </article>
-        <article class="card">
-          <h3>Data & Workflow</h3>
-          <p data-fr="Organisation des flux, logique de données, automatisation légère et cohérence des processus." data-en="Flow organization, data logic, light automation and process consistency.">Organisation des flux, logique de données, automatisation légère et cohérence des processus.</p>
-        </article>
-        <article class="card">
-          <h3>Digital Construction</h3>
-          <p data-fr="Interface entre conception, coordination, exécution et usages numériques du projet." data-en="Interface between design, coordination, execution and digital project uses.">Interface entre conception, coordination, exécution et usages numériques du projet.</p>
+        <article class="service-card">
+          <h3 data-fr="Relier technique et image" data-en="Connecting technique and image">Relier technique et image</h3>
+          <p data-fr="Présenter un sujet technique avec une forme plus crédible, plus lisible et plus convaincante." data-en="Presenting technical work with a form that feels more credible, legible and convincing.">Présenter un sujet technique avec une forme plus crédible, plus lisible et plus convaincante.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <section id="projects" class="section reveal">
+  <section class="section reveal" id="projects">
     <div class="container">
       <div class="section-head">
         <div>
-          <p class="section-tag" data-fr="Projets sélectionnés" data-en="Selected projects">Projets sélectionnés</p>
-          <h2 data-fr="Quelques projets représentatifs" data-en="Selected work">Quelques projets représentatifs</h2>
+          <p class="section-tag" data-fr="Selected Work" data-en="Selected Work">Selected Work</p>
+          <h2 data-fr="Une sélection de projets et de typologies." data-en="A selection of projects and typologies.">Une sélection de projets et de typologies.</h2>
         </div>
-        <a href="projects.html" class="text-link" data-fr="Voir tous les projets" data-en="View all projects">Voir tous les projets</a>
+        <a class="project-link" href="projects.html" data-fr="Voir l’ensemble" data-en="See full selection">Voir l’ensemble</a>
       </div>
       <div class="project-grid">
         <a class="project-card" href="project-healthcare.html">
-          <div class="project-image healthcare"></div>
+          <div class="project-visual"></div>
           <div class="project-content">
+            <div class="project-meta"><span class="tag">Healthcare</span><span class="tag">BIM</span></div>
             <h3 data-fr="Infrastructure hospitalière" data-en="Healthcare infrastructure">Infrastructure hospitalière</h3>
-            <p data-fr="Coordination BIM, lisibilité technique et gestion d’un environnement complexe." data-en="BIM coordination, technical clarity, and management of a complex environment.">Coordination BIM, lisibilité technique et gestion d’un environnement complexe.</p>
-            <div class="project-tags"><span>BIM</span><span>Coordination</span><span>Healthcare</span></div>
+            <p data-fr="Coordination BIM et logique d’information sur un environnement technique dense." data-en="BIM coordination and information logic in a technically dense environment.">Coordination BIM et logique d’information sur un environnement technique dense.</p>
+            <span class="project-link" data-fr="Voir le projet" data-en="View project">Voir le projet</span>
           </div>
         </a>
         <a class="project-card" href="project-transport.html">
-          <div class="project-image transport"></div>
+          <div class="project-visual"></div>
           <div class="project-content">
+            <div class="project-meta"><span class="tag">Transport</span><span class="tag">Digital Delivery</span></div>
             <h3 data-fr="Infrastructure de transport" data-en="Transport infrastructure">Infrastructure de transport</h3>
-            <p data-fr="Pilotage BIM sur un projet à forte contrainte de coordination." data-en="BIM management on a project with demanding coordination constraints.">Pilotage BIM sur un projet à forte contrainte de coordination.</p>
-            <div class="project-tags"><span>Infrastructure</span><span>Workflow</span><span>Coordination</span></div>
+            <p data-fr="Standardisation, coordination et robustesse documentaire sur un projet d’infrastructure." data-en="Standardization, coordination and documentation robustness on an infrastructure project.">Standardisation, coordination et robustesse documentaire sur un projet d’infrastructure.</p>
+            <span class="project-link" data-fr="Voir le projet" data-en="View project">Voir le projet</span>
           </div>
         </a>
         <a class="project-card" href="project-monaco.html">
-          <div class="project-image monaco"></div>
+          <div class="project-visual"></div>
           <div class="project-content">
+            <div class="project-meta"><span class="tag">High-rise</span><span class="tag">Coordination</span></div>
             <h3 data-fr="Tour & parking souterrain" data-en="Tower & underground parking">Tour & parking souterrain</h3>
-            <p data-fr="Organisation numérique et approche BIM sur un projet architectural complexe." data-en="Digital organization and BIM approach for a complex architectural project.">Organisation numérique et approche BIM sur un projet architectural complexe.</p>
-            <div class="project-tags"><span>Architecture</span><span>BIM</span><span>Structure</span></div>
+            <p data-fr="Pilotage BIM et résolution d’interfaces sur une opération à forte contrainte spatiale." data-en="BIM leadership and interface resolution on an operation with strong spatial constraints.">Pilotage BIM et résolution d’interfaces sur une opération à forte contrainte spatiale.</p>
+            <span class="project-link" data-fr="Voir le projet" data-en="View project">Voir le projet</span>
           </div>
         </a>
+        <a class="project-card" href="project-visualization.html">
+          <div class="project-visual"></div>
+          <div class="project-content">
+            <div class="project-meta"><span class="tag">Visualization</span><span class="tag">Communication</span></div>
+            <h3 data-fr="Visualisation et communication" data-en="Visualization & communication">Visualisation et communication</h3>
+            <p data-fr="Mise en forme des sujets techniques pour renforcer compréhension, adhésion et impact." data-en="Shaping technical topics to improve understanding, alignment and impact.">Mise en forme des sujets techniques pour renforcer compréhension, adhésion et impact.</p>
+            <span class="project-link" data-fr="Voir le projet" data-en="View project">Voir le projet</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <div class="container">
+      <div class="quote-card">
+        <span class="small-caps" data-fr="Approche" data-en="Approach">Approche</span>
+        <blockquote data-fr="Rendre un projet plus lisible est déjà une forme de performance." data-en="Making a project easier to read is already a form of performance.">Rendre un projet plus lisible est déjà une forme de performance.</blockquote>
       </div>
     </div>
   </section>
@@ -182,113 +173,57 @@
       <div class="section-head">
         <div>
           <p class="section-tag" data-fr="Réflexion" data-en="Thinking">Réflexion</p>
-          <h2 data-fr="Au-delà des outils : méthode, logique et anticipation" data-en="Beyond tools: method, logic, and anticipation">Au-delà des outils : méthode, logique et anticipation</h2>
+          <h2 data-fr="Quelques idées qui structurent ma manière de travailler." data-en="A few ideas that shape the way I work.">Quelques idées qui structurent ma manière de travailler.</h2>
         </div>
-        <a href="thinking.html" class="text-link" data-fr="Lire les notes" data-en="Read the notes">Lire les notes</a>
+        <a class="project-link" href="thinking.html" data-fr="Lire les réflexions" data-en="Read the essays">Lire les réflexions</a>
       </div>
-      <div class="insight-grid">
-        <article class="insight-card">
-          <h3>BIM & AI</h3>
-          <p data-fr="Explorer l’IA comme un support de structure, de lecture et d’aide à la décision." data-en="Exploring AI as support for structure, interpretation, and decision-making.">Explorer l’IA comme un support de structure, de lecture et d’aide à la décision.</p>
+      <div class="thinking-grid">
+        <article class="thinking-card">
+          <div class="tag-row"><span class="tag">BIM</span><span class="tag">AI</span></div>
+          <h3 data-fr="BIM & IA" data-en="BIM & AI">BIM & IA</h3>
+          <p data-fr="L’IA a de la valeur lorsqu’elle clarifie les systèmes, pas lorsqu’elle masque leur logique." data-en="AI has value when it clarifies systems, not when it obscures their logic.">L’IA a de la valeur lorsqu’elle clarifie les systèmes, pas lorsqu’elle masque leur logique.</p>
         </article>
-        <article class="insight-card">
-          <h3>Automation in Construction</h3>
-          <p data-fr="Créer des méthodes simples qui retirent de la friction au lieu d’ajouter de la complexité." data-en="Creating simple methods that remove friction instead of adding complexity.">Créer des méthodes simples qui retirent de la friction au lieu d’ajouter de la complexité.</p>
+        <article class="thinking-card">
+          <div class="tag-row"><span class="tag">Automation</span><span class="tag">Method</span></div>
+          <h3 data-fr="Automatiser sans complexifier" data-en="Automating without making things harder">Automatiser sans complexifier</h3>
+          <p data-fr="Un workflow utile retire de la friction sans créer de dépendance fragile ou opaque." data-en="A useful workflow removes friction without creating fragile or opaque dependency.">Un workflow utile retire de la friction sans créer de dépendance fragile ou opaque.</p>
         </article>
-        <article class="insight-card">
-          <h3>Data Structuring</h3>
-          <p data-fr="Rendre l’information plus fiable, plus lisible et plus utile à la décision." data-en="Making information more reliable, more legible, and more useful for decision-making.">Rendre l’information plus fiable, plus lisible et plus utile à la décision.</p>
+        <article class="thinking-card">
+          <div class="tag-row"><span class="tag">Data</span><span class="tag">Decision</span></div>
+          <h3 data-fr="Structurer la donnée pour décider" data-en="Structuring data to support decisions">Structurer la donnée pour décider</h3>
+          <p data-fr="La qualité d’un modèle dépend aussi de la façon dont l’information y est hiérarchisée et relue." data-en="Model quality also depends on how information is organized and reviewed.">La qualité d’un modèle dépend aussi de la façon dont l’information y est hiérarchisée et relue.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="section reveal">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <p class="section-tag" data-fr="Process" data-en="Process">Process</p>
-          <h2 data-fr="Ma façon d’aborder un sujet technique" data-en="How I approach a technical topic">Ma façon d’aborder un sujet technique</h2>
-        </div>
-      </div>
-      <div class="process-grid">
-        <article class="card">
-          <h3 data-fr="Observer" data-en="Observe">Observer</h3>
-          <p data-fr="Comprendre les contraintes réelles, humaines et techniques." data-en="Understand real human and technical constraints.">Comprendre les contraintes réelles, humaines et techniques.</p>
-        </article>
-        <article class="card">
-          <h3 data-fr="Structurer" data-en="Structure">Structurer</h3>
-          <p data-fr="Faire émerger une logique exploitable, claire et cohérente." data-en="Build usable, clear, and coherent logic.">Faire émerger une logique exploitable, claire et cohérente.</p>
-        </article>
-        <article class="card">
-          <h3 data-fr="Améliorer" data-en="Improve">Améliorer</h3>
-          <p data-fr="Construire des solutions utiles, robustes et lisibles." data-en="Build useful, robust, and readable solutions.">Construire des solutions utiles, robustes et lisibles.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section reveal">
+  <section class="section reveal" id="contact">
     <div class="container contact-grid">
-      <article class="contact-card">
+      <div class="contact-card">
         <p class="section-tag" data-fr="Contact" data-en="Contact">Contact</p>
-        <h2 data-fr="Parlons de votre projet." data-en="Let’s discuss your project.">Parlons de votre projet.</h2>
-        <p data-fr="Réponse sous 24 à 48h." data-en="Reply within 24 to 48 hours.">Réponse sous 24 à 48h.</p>
+        <h2 data-fr="Parlons d’un projet, d’un rôle ou d’une mission." data-en="Let’s talk about a project, a role or a mission.">Parlons d’un projet, d’un rôle ou d’une mission.</h2>
+        <p class="large-copy" data-fr="Le site a maintenant une direction plus proche d’un studio créatif premium. Il reste à remplacer les coordonnées placeholders par les tiennes pour le mettre en ligne." data-en="The site now has a direction closer to a premium creative studio. The remaining step is to replace the placeholder contact details with your real ones before publishing.">Le site a maintenant une direction plus proche d’un studio créatif premium. Il reste à remplacer les coordonnées placeholders par les tiennes pour le mettre en ligne.</p>
+      </div>
+      <div class="contact-card">
         <div class="contact-list">
-          <div class="contact-item">
-            <h3>Clément El Hadri</h3>
-            <p data-fr="BIM Manager / Architectural Technology Engineer" data-en="BIM Manager / Architectural Technology Engineer">BIM Manager / Architectural Technology Engineer</p>
-            <p data-fr="J’aide à structurer les projets complexes grâce au BIM, à la logique de donnée et à des workflows plus lisibles." data-en="I help structure complex projects through BIM, data logic, and clearer workflows.">J’aide à structurer les projets complexes grâce au BIM, à la logique de donnée et à des workflows plus lisibles.</p>
-          </div>
-          <div class="contact-item">
-            <h3 data-fr="Écris-moi par e-mail" data-en="Email me">Écris-moi par e-mail</h3>
-            <a class="text-link" href="mailto:contact@example.com">contact@example.com</a>
-          </div>
-          <div class="contact-item">
-            <h3>LinkedIn</h3>
-            <a class="text-link" href="https://linkedin.com/in/tonprofil" target="_blank" rel="noreferrer">linkedin.com/in/tonprofil</a>
-          </div>
-          <div class="contact-item">
-            <h3 data-fr="Disponibilité" data-en="Availability">Disponibilité</h3>
-            <p data-fr="Ouvert aux échanges, collaborations et opportunités." data-en="Open to conversations, collaborations, and opportunities.">Ouvert aux échanges, collaborations et opportunités.</p>
-          </div>
+          <div class="contact-row"><span data-fr="Email" data-en="Email">Email</span><span>contact@example.com</span></div>
+          <div class="contact-row"><span>LinkedIn</span><span>linkedin.com/in/tonprofil</span></div>
+          <div class="contact-row"><span data-fr="Disponibilité" data-en="Availability">Disponibilité</span><span data-fr="Ouvert aux échanges" data-en="Open to conversations">Ouvert aux échanges</span></div>
         </div>
-      </article>
-      <article class="contact-card">
-        <form class="contact-form">
-          <div class="form-row">
-            <div class="form-field">
-              <label data-fr="Nom" data-en="Name">Nom</label>
-              <input type="text" data-fr-placeholder="Votre nom" data-en-placeholder="Your name" placeholder="Votre nom" />
-            </div>
-            <div class="form-field">
-              <label data-fr="E-mail" data-en="Email">E-mail</label>
-              <input type="email" data-fr-placeholder="Votre e-mail" data-en-placeholder="Your email" placeholder="Votre e-mail" />
-            </div>
-          </div>
-          <div class="form-field">
-            <label data-fr="Sujet" data-en="Subject">Sujet</label>
-            <input type="text" data-fr-placeholder="Objet de votre message" data-en-placeholder="Reason for your message" placeholder="Objet de votre message" />
-          </div>
-          <div class="form-field">
-            <label data-fr="Message" data-en="Message">Message</label>
-            <textarea data-fr-placeholder="Décrivez votre projet, votre besoin ou votre demande." data-en-placeholder="Describe your project, need, or request." placeholder="Décrivez votre projet, votre besoin ou votre demande."></textarea>
-          </div>
-          <button class="btn btn-primary" type="submit" data-fr="Envoyer" data-en="Send">Envoyer</button>
-          <p class="form-note" data-fr="Version visuelle du formulaire. Pour un vrai envoi depuis GitHub Pages, il faudra connecter un service de formulaire." data-en="Visual form only. For real submission from GitHub Pages, a form service must be connected.">Version visuelle du formulaire. Pour un vrai envoi depuis GitHub Pages, il faudra connecter un service de formulaire.</p>
-        </form>
-      </article>
+        <a href="mailto:contact@example.com" class="btn btn-primary" data-fr="Envoyer un message" data-en="Send a message">Envoyer un message</a>
+      </div>
     </div>
   </section>
 </main>
 
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <p>© 2026 Clément El Hadri</p>
-    <p data-fr="Portfolio BIM / DATA / INNOVATION" data-en="BIM / DATA / INNOVATION portfolio">Portfolio BIM / DATA / INNOVATION</p>
-  </div>
-</footer>
-<script src="script.js"></script>
-
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-shell">
+        <p data-fr="Portfolio de Clément El Hadri — design éditorial, structure claire et approche premium." data-en="Portfolio of Clément El Hadri — editorial design, clear structure and premium positioning.">Portfolio de Clément El Hadri — design éditorial, structure claire et approche premium.</p>
+        <p data-fr="Mis à jour en 2026 — HTML, CSS, JavaScript" data-en="Updated in 2026 — HTML, CSS, JavaScript">Mis à jour en 2026 — HTML, CSS, JavaScript</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
