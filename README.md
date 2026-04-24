@@ -1,15 +1,15 @@
-# Portfolio — version corrigée
+# Portfolio Clément El Hadri
 
-Cette version corrige la page d’accueil avec le portrait centré au milieu du hero.
+Site statique HTML/CSS/JS.
 
-## Fichiers principaux
-- `index.html` : page d’accueil
-- `projects.html` : projets
-- `thinking.html` : réflexion
-- `project-*.html` : pages projets
+## Fichiers
+- `index.html` : page d'accueil
+- `projects.html` : page projets
+- `thinking.html` : page réflexion
+- `project-*.html` : pages projet
 - `style.css` : design global
-- `script.js` : menu mobile, langue FR/EN, animations
-- `profile-portrait.png` : photo de profil utilisée sur la page d’accueil
+- `script.js` : menu mobile
+- `profile-portrait.png` : portrait principal
 
-## À personnaliser
-Remplacer `contact@example.com` et `linkedin.com/in/tonprofil` dans les fichiers HTML.
+## À modifier
+Remplace `contact@example.com` par ton email et adapte les textes selon ton parcours.

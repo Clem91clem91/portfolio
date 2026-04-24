@@ -1,254 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clément El Hadri — Designer. Développeur. Stratégie.</title>
-  <meta name="description" content="Portfolio professionnel de Clément El Hadri : BIM, design de workflows, automatisation et innovation digitale pour la construction." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clément El Hadri — Designer BIM & Développeur</title>
+  <meta name="description" content="Portfolio de Clément El Hadri — BIM, automatisation, data et design digital pour la construction.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="site-shell">
-    <header class="site-header">
-      <div class="container nav">
-        <a href="index.html" class="logo-wrap" aria-label="Accueil">
-          <span class="logo-mark">ch</span>
-          <span class="logo-text">
-            <span class="logo-name">Clément El Hadri</span>
-            <span class="logo-role" data-fr="BIM • Data • Innovation" data-en="BIM • Data • Innovation">BIM • Data • Innovation</span>
-          </span>
-        </a>
-
-        <button class="nav-toggle" aria-label="Ouvrir le menu">
-          <span></span><span></span><span></span>
-        </button>
-
-        <div class="nav-menu">
-          <nav class="nav-links">
-            <a href="projects.html" data-fr="Work" data-en="Work">Work</a>
-            <a href="thinking.html" data-fr="Réflexion" data-en="Thinking">Réflexion</a>
-            <a href="#about" data-fr="À propos" data-en="About">À propos</a>
-            <a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
-            <button class="lang-switch" id="langSwitch" aria-label="Changer la langue"><span>FR</span> | <span>EN</span></button>
-          </nav>
-          <a class="nav-cta" href="projects.html" data-fr="Voir mon travail ↗" data-en="See my work ↗">Voir mon travail ↗</a>
-        </div>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Accueil"><span class="brand-mark">CE</span></a>
+  <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">Menu</button>
+  <nav class="nav-pill" aria-label="Navigation principale">
+    <a href="projects.html">Work</a>
+    <a href="thinking.html">Réflexion</a>
+    <a href="index.html#about">À propos</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+  <a class="nav-cta" href="projects.html">Voir mon travail <span>↗</span></a>
+</header>
+<main>
+  <section class="hero hero-home" id="top">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <figure class="portrait-stage" aria-label="Portrait de Clément El Hadri">
+      <img src="profile-portrait.png" alt="Portrait illustré de Clément El Hadri">
+    </figure>
+    <div class="hero-copy">
+      <p class="eyebrow">Bonjour, je suis Clément El Hadri</p>
+      <h1>Designer.<br>Développeur.<br>Stratège.</h1>
+      <span class="accent-line" aria-hidden="true"></span>
+      <p class="lead">J’aide les organisations à transformer des sujets BIM, data et construction digitale en systèmes plus clairs, plus fiables et plus utiles sur le terrain.</p>
+      <div class="expertise-grid">
+        <article class="mini-card"><span class="icon">&lt;/&gt;</span><h3>Automatisation & BIM</h3><p>Des workflows robustes pour coordonner, fiabiliser et accélérer la production.</p></article>
+        <article class="mini-card"><span class="icon">◇</span><h3>Design & visualisation</h3><p>Des interfaces et supports qui rendent les sujets techniques compréhensibles.</p></article>
       </div>
-    </header>
+      <div class="hero-actions"><a class="btn btn-primary" href="projects.html">Découvrir mon travail <span>↗</span></a><a class="btn btn-ghost" href="#about">En savoir plus ↓</a></div>
+    </div>
+    <aside class="hero-info" aria-label="Informations rapides">
+      <div><span class="info-icon">◎</span><strong>Basé en Île-de-France</strong><small>Disponible pour projets BIM & digitaux</small></div>
+      <div><span class="info-icon">↗</span><strong>Ouvert aux opportunités</strong><small>Architecture, BIM, data et automatisation</small></div>
+      <div><span class="info-icon">✉</span><strong>contact@example.com</strong><small>Réponse sous 24h</small></div>
+    </aside>
+  </section>
 
-    <main>
-      <section class="container reveal">
-        <div class="hero-panel">
-          <div class="hero-grid">
-            <div class="hero-copy">
-              <p class="eyebrow" data-fr="Bonjour, je suis Clément El Hadri" data-en="Hello, I'm Clément El Hadri">Bonjour, je suis Clément El Hadri</p>
-              <h1>
-                <span data-fr="Designer." data-en="Designer.">Designer.</span>
-                <span data-fr="Développeur." data-en="Developer.">Développeur.</span>
-                <span data-fr="Stratégie." data-en="Strategy.">Stratégie.</span>
-              </h1>
-              <div class="hero-line"></div>
-              <p class="hero-intro" data-fr="J’aide les organisations à transformer des sujets BIM, data et construction digitale en systèmes plus clairs, plus fiables et plus utiles sur le terrain." data-en="I help teams turn BIM, data and digital construction challenges into clearer, more reliable and more useful systems.">
-                J’aide les organisations à transformer des sujets BIM, data et construction digitale en systèmes plus clairs, plus fiables et plus utiles sur le terrain.
-              </p>
+  <section class="section" id="about">
+    <div class="section-heading"><p class="eyebrow">À propos</p><h2>Une approche entre terrain, design et systèmes numériques.</h2></div>
+    <div class="split-content">
+      <p>Je conçois des méthodes et supports digitaux pour rendre les projets de construction plus lisibles, mieux coordonnés et plus efficaces.</p>
+      <p>Mon travail relie les besoins opérationnels, les outils BIM, la donnée et la visualisation pour produire des livrables utiles aux équipes projet.</p>
+    </div>
+  </section>
 
-              <div class="expertise-grid">
-                <article class="expertise-card">
-                  <div class="card-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 8 3 12l5 4"/><path d="M16 8l5 4-5 4"/><path d="m14 4-4 16"/></svg>
-                  </div>
-                  <div>
-                    <h3 data-fr="Automatisation & BIM" data-en="Automation & BIM">Automatisation & BIM</h3>
-                    <p data-fr="Des workflows robustes pour coordonner, fiabiliser et accélérer la production sur projets complexes." data-en="Robust workflows to coordinate, secure and accelerate delivery on complex projects.">Des workflows robustes pour coordonner, fiabiliser et accélérer la production sur projets complexes.</p>
-                  </div>
-                </article>
+  <section class="section selected-work">
+    <div class="section-heading"><p class="eyebrow">Selected work</p><h2>Projets récents</h2></div>
+    <div class="work-list">
+      <a class="work-row" href="project-healthcare.html"><span>01</span><strong>Healthcare BIM Coordination</strong><em>Modélisation · Coordination · Synthèse</em></a>
+      <a class="work-row" href="project-transport.html"><span>02</span><strong>Transport Infrastructure</strong><em>Data · BIM · Production</em></a>
+      <a class="work-row" href="project-monaco.html"><span>03</span><strong>Monaco Urban Systems</strong><em>Visualisation · Méthode · Coordination</em></a>
+    </div>
+  </section>
 
-                <article class="expertise-card">
-                  <div class="card-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 4 7.5v9L12 21l8-4.5v-9L12 3Z"/><path d="M4 7.5 12 12l8-4.5"/><path d="M12 12v9"/></svg>
-                  </div>
-                  <div>
-                    <h3 data-fr="Design & visualisation" data-en="Design & visualisation">Design & visualisation</h3>
-                    <p data-fr="Des interfaces, représentations et supports qui rendent les sujets techniques compréhensibles et désirables." data-en="Interfaces and visuals that make technical work understandable and engaging.">Des interfaces, représentations et supports qui rendent les sujets techniques compréhensibles et désirables.</p>
-                  </div>
-                </article>
-              </div>
-
-              <div class="hero-actions">
-                <a class="primary-btn" href="projects.html" data-fr="Découvrir mon travail ↗" data-en="Discover my work ↗">Découvrir mon travail ↗</a>
-                <a class="secondary-btn" href="#about" data-fr="En savoir plus ↓" data-en="Learn more ↓">En savoir plus ↓</a>
-              </div>
-            </div>
-
-            <div class="hero-visual">
-              <div class="visual-glow"></div>
-              <div class="portrait-frame">
-                <img class="profile-portrait" src="profile-portrait.png" alt="Portrait de Clément El Hadri" />
-              </div>
-            </div>
-          </div>
-
-          <div class="hero-footer contact-panel">
-            <div class="info-pill">
-              <div class="card-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-4.35 7-11a7 7 0 0 0-14 0c0 6.65 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-              </div>
-              <div>
-                <strong data-fr="Basé en Île-de-France" data-en="Based in Paris region">Basé en Île-de-France</strong>
-                <span data-fr="Disponible pour missions et collaborations" data-en="Available for projects and collaborations">Disponible pour missions et collaborations</span>
-              </div>
-            </div>
-            <div class="info-pill">
-              <div class="card-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m3 11 18-8-8 18-2-8-8-2Z"/></svg>
-              </div>
-              <div>
-                <strong data-fr="Ouvert aux nouvelles opportunités" data-en="Open to new opportunities">Ouvert aux nouvelles opportunités</strong>
-                <span data-fr="CDI, mission freelance ou innovation produit" data-en="Permanent role, freelance mission or product innovation">CDI, mission freelance ou innovation produit</span>
-              </div>
-            </div>
-            <div class="info-pill">
-              <div class="card-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
-              </div>
-              <div>
-                <strong>contact@example.com</strong>
-                <span data-fr="Réponse sous 24 h" data-en="Reply within 24 hours">Réponse sous 24 h</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="about">
-        <div class="container reveal">
-          <div class="section-header">
-            <div>
-              <p class="eyebrow" data-fr="Positionnement" data-en="Positioning">Positionnement</p>
-              <h2 data-fr="Une approche hybride entre production, système et expérience." data-en="A hybrid approach between delivery, systems and experience.">Une approche hybride entre production, système et expérience.</h2>
-            </div>
-            <p data-fr="Je travaille à l’intersection du BIM, de la coordination, de l’automatisation et de la communication de projet. Mon objectif : faire gagner en clarté, en performance et en qualité d’exécution." data-en="I work at the intersection of BIM, coordination, automation and project communication, with a focus on clarity, performance and execution quality.">Je travaille à l’intersection du BIM, de la coordination, de l’automatisation et de la communication de projet. Mon objectif : faire gagner en clarté, en performance et en qualité d’exécution.</p>
-          </div>
-
-          <div class="stats-grid">
-            <article class="stat-card">
-              <h3>5+</h3>
-              <p data-fr="Années d’expérience sur des projets BIM, coordination et digitalisation dans le secteur de la construction." data-en="Years of experience across BIM, coordination and digitalisation in the construction sector.">Années d’expérience sur des projets BIM, coordination et digitalisation dans le secteur de la construction.</p>
-            </article>
-            <article class="stat-card">
-              <h3 data-fr="Vision terrain" data-en="Field mindset">Vision terrain</h3>
-              <p data-fr="Des solutions pensées pour être réellement exploitables par les équipes projet, pas seulement élégantes sur le papier." data-en="Solutions designed to be truly usable by project teams, not just elegant on paper.">Des solutions pensées pour être réellement exploitables par les équipes projet, pas seulement élégantes sur le papier.</p>
-            </article>
-            <article class="stat-card">
-              <h3 data-fr="Culture système" data-en="Systems culture">Culture système</h3>
-              <p data-fr="Structuration des données, logique de process, qualité visuelle et mise en forme claire des livrables." data-en="Data structure, process thinking, visual quality and clear deliverable design.">Structuration des données, logique de process, qualité visuelle et mise en forme claire des livrables.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container reveal">
-          <div class="section-header">
-            <div>
-              <p class="eyebrow" data-fr="Projets sélectionnés" data-en="Selected work">Projets sélectionnés</p>
-              <h2 data-fr="Des projets où la méthode crée de la valeur concrète." data-en="Projects where method creates concrete value.">Des projets où la méthode crée de la valeur concrète.</h2>
-            </div>
-            <a class="ghost-link" href="projects.html" data-fr="Voir tous les projets" data-en="View all projects">Voir tous les projets</a>
-          </div>
-
-          <div class="projects-grid">
-            <article class="project-card">
-              <div class="project-thumb" style="--thumb-bg: linear-gradient(135deg, #ead8c2 0%, #f7eee5 100%);"></div>
-              <div class="project-meta"><span class="meta-tag">BIM</span><span class="meta-tag">Coordination</span><span class="meta-tag">Healthcare</span></div>
-              <h3 data-fr="Infrastructure hospitalière" data-en="Healthcare infrastructure">Infrastructure hospitalière</h3>
-              <p data-fr="Pilotage BIM et coordination multi-acteurs sur un environnement technique à fortes contraintes." data-en="BIM leadership and multi-stakeholder coordination on a high-constraint technical environment.">Pilotage BIM et coordination multi-acteurs sur un environnement technique à fortes contraintes.</p>
-              <a class="project-link" href="project-healthcare.html" data-fr="Voir l’étude de cas →" data-en="View case study →">Voir l’étude de cas →</a>
-            </article>
-
-            <article class="project-card">
-              <div class="project-thumb" style="--thumb-bg: linear-gradient(135deg, #ead2c7 0%, #f7ede7 100%);"></div>
-              <div class="project-meta"><span class="meta-tag">Infrastructure</span><span class="meta-tag">Transport</span><span class="meta-tag">Data</span></div>
-              <h3 data-fr="Infrastructure de transport" data-en="Transport infrastructure">Infrastructure de transport</h3>
-              <p data-fr="Mise en place de standards, contrôle de qualité et structuration des flux d’informations." data-en="Standards implementation, quality control and information flow structuring.">Mise en place de standards, contrôle de qualité et structuration des flux d’informations.</p>
-              <a class="project-link" href="project-transport.html" data-fr="Voir l’étude de cas →" data-en="View case study →">Voir l’étude de cas →</a>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container reveal">
-          <div class="section-header">
-            <div>
-              <p class="eyebrow" data-fr="Valeur ajoutée" data-en="Added value">Valeur ajoutée</p>
-              <h2 data-fr="Ce que j’apporte à une équipe ou à un projet." data-en="What I bring to a team or a project.">Ce que j’apporte à une équipe ou à un projet.</h2>
-            </div>
-          </div>
-          <div class="values-grid">
-            <article class="value-card">
-              <h3 data-fr="Clarté" data-en="Clarity">Clarté</h3>
-              <p data-fr="Je simplifie les environnements complexes pour rendre les décisions, les échanges et les livrables plus lisibles." data-en="I simplify complex environments so decisions, exchanges and deliverables become easier to read.">Je simplifie les environnements complexes pour rendre les décisions, les échanges et les livrables plus lisibles.</p>
-            </article>
-            <article class="value-card">
-              <h3 data-fr="Fiabilité" data-en="Reliability">Fiabilité</h3>
-              <p data-fr="Je structure des systèmes et des méthodes qui tiennent dans le temps et sécurisent la production." data-en="I structure methods and systems that last over time and secure delivery.">Je structure des systèmes et des méthodes qui tiennent dans le temps et sécurisent la production.</p>
-            </article>
-            <article class="value-card">
-              <h3 data-fr="Impact visuel" data-en="Visual impact">Impact visuel</h3>
-              <p data-fr="Je soigne la manière de présenter les sujets techniques pour mieux convaincre et mieux embarquer les parties prenantes." data-en="I care about how technical topics are presented to create alignment and buy-in.">Je soigne la manière de présenter les sujets techniques pour mieux convaincre et mieux embarquer les parties prenantes.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="contact">
-        <div class="container reveal">
-          <div class="contact-panel">
-            <div class="contact-grid">
-              <div class="contact-copy">
-                <p class="eyebrow" data-fr="Contact" data-en="Contact">Contact</p>
-                <h2 data-fr="Discutons de votre prochain projet." data-en="Let's discuss your next project.">Discutons de votre prochain projet.</h2>
-                <p data-fr="Que ce soit pour un rôle en entreprise, une mission freelance ou un sujet d’innovation BIM / data, je suis toujours partant pour échanger sur des enjeux concrets et des systèmes bien conçus." data-en="Whether it's for a permanent role, a freelance mission or a BIM/data innovation topic, I'm always happy to discuss concrete challenges and well-designed systems.">Que ce soit pour un rôle en entreprise, une mission freelance ou un sujet d’innovation BIM / data, je suis toujours partant pour échanger sur des enjeux concrets et des systèmes bien conçus.</p>
-                <div class="hero-actions">
-                  <a class="primary-btn" href="mailto:contact@example.com">Envoyer un email</a>
-                  <a class="secondary-btn" href="projects.html" data-fr="Voir les projets" data-en="View projects">Voir les projets</a>
-                </div>
-              </div>
-
-              <div class="contact-copy">
-                <div class="contact-card">
-                  <strong>Email</strong>
-                  <a href="mailto:contact@example.com">contact@example.com</a>
-                  <p data-fr="À remplacer par votre adresse professionnelle." data-en="Replace with your professional address.">À remplacer par votre adresse professionnelle.</p>
-                </div>
-                <div class="contact-card">
-                  <strong>LinkedIn</strong>
-                  <a href="https://linkedin.com/in/tonprofil" target="_blank" rel="noreferrer">linkedin.com/in/tonprofil</a>
-                  <p data-fr="Ajoutez votre profil LinkedIn ici." data-en="Add your LinkedIn profile here.">Ajoutez votre profil LinkedIn ici.</p>
-                </div>
-                <div class="contact-card">
-                  <strong data-fr="Disponibilité" data-en="Availability">Disponibilité</strong>
-                  <p data-fr="Ouvert aux opportunités en BIM, innovation, coordination digitale et automatisation." data-en="Open to opportunities in BIM, innovation, digital coordination and automation.">Ouvert aux opportunités en BIM, innovation, coordination digitale et automatisation.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container footer-bar">
-        <span>© 2026 Clément El Hadri</span>
-        <span data-fr="Portfolio — BIM • Data • Innovation" data-en="Portfolio — BIM • Data • Innovation">Portfolio — BIM • Data • Innovation</span>
-      </div>
-    </footer>
-  </div>
-
-  <script src="script.js"></script>
+  <section class="contact-band" id="contact">
+    <p class="eyebrow">Contact</p>
+    <h2>Un projet BIM, data ou visualisation à structurer ?</h2>
+    <a class="btn btn-primary" href="mailto:contact@example.com">Me contacter <span>↗</span></a>
+  </section>
+</main>
+<script src="script.js"></script>
 </body>
 </html>
