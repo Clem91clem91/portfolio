@@ -1,1 +1,8 @@
-const header=document.querySelector('.site-header');const toggle=document.querySelector('.menu-toggle');if(toggle){toggle.addEventListener('click',()=>{const open=header.classList.toggle('open');toggle.setAttribute('aria-expanded',open?'true':'false');});}document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>header?.classList.remove('open')));
+const header = document.querySelector('.header');
+const menu = document.querySelector('.menu');
+if (menu && header) {
+  menu.addEventListener('click', () => {
+    const open = header.classList.toggle('open');
+    menu.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+}

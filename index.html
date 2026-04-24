@@ -3,69 +3,71 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Clément El Hadri — Designer BIM & Développeur</title>
-  <meta name="description" content="Portfolio de Clément El Hadri — BIM, automatisation, data et design digital pour la construction.">
-  <link rel="stylesheet" href="style.css">
+  <title>Clément El Hadri — Portfolio</title>
+  <meta name="description" content="Portfolio de Clément El Hadri — BIM, automatisation, data et construction digitale.">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<header class="site-header">
-  <a class="brand" href="index.html" aria-label="Accueil"><span class="brand-mark">CE</span></a>
-  <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">Menu</button>
-  <nav class="nav-pill" aria-label="Navigation principale">
-    <a href="projects.html">Work</a>
-    <a href="thinking.html">Réflexion</a>
-    <a href="index.html#about">À propos</a>
-    <a href="index.html#contact">Contact</a>
-  </nav>
-  <a class="nav-cta" href="projects.html">Voir mon travail <span>↗</span></a>
-</header>
-<main>
-  <section class="hero hero-home" id="top">
-    <div class="hero-glow" aria-hidden="true"></div>
-    <figure class="portrait-stage" aria-label="Portrait de Clément El Hadri">
-      <img src="profile-portrait.png" alt="Portrait illustré de Clément El Hadri">
+<div class="site-shell">
+  <header class="header">
+    <a class="logo" href="index.html" aria-label="Accueil">CE</a>
+    <button class="menu" aria-expanded="false">Menu</button>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="projects.html">Work</a>
+      <a href="thinking.html">Réflexion</a>
+      <a href="index.html#about">À propos</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a class="top-cta" href="projects.html">Voir mon travail <span>↗</span></a>
+  </header>
+
+  <main class="hero">
+    <figure class="portrait">
+      <img src="./profile-portrait.png" alt="Portrait illustré de Clément El Hadri">
     </figure>
-    <div class="hero-copy">
+
+    <section class="hero-content">
       <p class="eyebrow">Bonjour, je suis Clément El Hadri</p>
       <h1>Designer.<br>Développeur.<br>Stratège.</h1>
-      <span class="accent-line" aria-hidden="true"></span>
+      <span class="accent"></span>
       <p class="lead">J’aide les organisations à transformer des sujets BIM, data et construction digitale en systèmes plus clairs, plus fiables et plus utiles sur le terrain.</p>
-      <div class="expertise-grid">
-        <article class="mini-card"><span class="icon">&lt;/&gt;</span><h3>Automatisation & BIM</h3><p>Des workflows robustes pour coordonner, fiabiliser et accélérer la production.</p></article>
-        <article class="mini-card"><span class="icon">◇</span><h3>Design & visualisation</h3><p>Des interfaces et supports qui rendent les sujets techniques compréhensibles.</p></article>
+
+      <div class="cards">
+        <article class="card">
+          <span class="card-icon">&lt;/&gt;</span>
+          <h3>Automatisation & BIM</h3>
+          <p>Des workflows robustes pour coordonner, fiabiliser et accélérer la production.</p>
+        </article>
+        <article class="card">
+          <span class="card-icon">◇</span>
+          <h3>Design & visualisation</h3>
+          <p>Des interfaces et supports qui rendent les sujets techniques compréhensibles.</p>
+        </article>
       </div>
-      <div class="hero-actions"><a class="btn btn-primary" href="projects.html">Découvrir mon travail <span>↗</span></a><a class="btn btn-ghost" href="#about">En savoir plus ↓</a></div>
-    </div>
-    <aside class="hero-info" aria-label="Informations rapides">
-      <div><span class="info-icon">◎</span><strong>Basé en Île-de-France</strong><small>Disponible pour projets BIM & digitaux</small></div>
-      <div><span class="info-icon">↗</span><strong>Ouvert aux opportunités</strong><small>Architecture, BIM, data et automatisation</small></div>
-      <div><span class="info-icon">✉</span><strong>contact@example.com</strong><small>Réponse sous 24h</small></div>
+
+      <div class="actions">
+        <a class="btn btn-primary" href="projects.html">Découvrir mon travail <span>↗</span></a>
+        <a class="btn btn-secondary" href="#about">En savoir plus ↓</a>
+      </div>
+    </section>
+
+    <aside class="info-bar">
+      <div class="info-item"><span class="info-icon">◎</span><strong>Basé en Île-de-France</strong><small>Disponible pour projets BIM & digitaux</small></div>
+      <div class="info-item"><span class="info-icon">↗</span><strong>Ouvert aux opportunités</strong><small>Architecture, BIM, data et automatisation</small></div>
+      <div class="info-item"><span class="info-icon">✉</span><strong>contact@example.com</strong><small>Réponse sous 24h</small></div>
     </aside>
-  </section>
+  </main>
+</div>
 
-  <section class="section" id="about">
-    <div class="section-heading"><p class="eyebrow">À propos</p><h2>Une approche entre terrain, design et systèmes numériques.</h2></div>
-    <div class="split-content">
-      <p>Je conçois des méthodes et supports digitaux pour rendre les projets de construction plus lisibles, mieux coordonnés et plus efficaces.</p>
-      <p>Mon travail relie les besoins opérationnels, les outils BIM, la donnée et la visualisation pour produire des livrables utiles aux équipes projet.</p>
-    </div>
-  </section>
+<section class="page" id="about">
+  <p class="eyebrow">À propos</p>
+  <h1>Un profil hybride entre terrain, design et systèmes numériques.</h1>
+  <p class="intro-text">Je conçois des méthodes, supports et outils digitaux pour rendre les projets de construction plus lisibles, mieux coordonnés et plus efficaces.</p>
+</section>
 
-  <section class="section selected-work">
-    <div class="section-heading"><p class="eyebrow">Selected work</p><h2>Projets récents</h2></div>
-    <div class="work-list">
-      <a class="work-row" href="project-healthcare.html"><span>01</span><strong>Healthcare BIM Coordination</strong><em>Modélisation · Coordination · Synthèse</em></a>
-      <a class="work-row" href="project-transport.html"><span>02</span><strong>Transport Infrastructure</strong><em>Data · BIM · Production</em></a>
-      <a class="work-row" href="project-monaco.html"><span>03</span><strong>Monaco Urban Systems</strong><em>Visualisation · Méthode · Coordination</em></a>
-    </div>
-  </section>
-
-  <section class="contact-band" id="contact">
-    <p class="eyebrow">Contact</p>
-    <h2>Un projet BIM, data ou visualisation à structurer ?</h2>
-    <a class="btn btn-primary" href="mailto:contact@example.com">Me contacter <span>↗</span></a>
-  </section>
-</main>
-<script src="script.js"></script>
+<footer class="footer" id="contact">
+  <p>Contact : <a href="mailto:contact@example.com">contact@example.com</a></p>
+</footer>
+<script src="./script.js"></script>
 </body>
 </html>

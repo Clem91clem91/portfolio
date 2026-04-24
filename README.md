@@ -1,15 +1,15 @@
-# Portfolio Clément El Hadri
+# Portfolio — refonte corrigée
 
-Site statique HTML/CSS/JS.
-
-## Fichiers
+Fichiers principaux :
 - `index.html` : page d'accueil
-- `projects.html` : page projets
-- `thinking.html` : page réflexion
+- `projects.html` : projets
+- `thinking.html` : réflexion
 - `project-*.html` : pages projet
 - `style.css` : design global
 - `script.js` : menu mobile
-- `profile-portrait.png` : portrait principal
+- `profile-portrait.png` : portrait utilisé sur la page d'accueil
 
-## À modifier
-Remplace `contact@example.com` par ton email et adapte les textes selon ton parcours.
+À modifier :
+- `contact@example.com`
+- les textes des projets
+- les liens de navigation si besoin
