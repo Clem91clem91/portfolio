@@ -1,15 +1,15 @@
-# Portfolio redesign
+# Portfolio — version corrigée
 
-Refonte complète du portfolio dans une direction claire crème / beige.
+Cette version corrige la page d’accueil avec le portrait centré au milieu du hero.
 
-## Fichiers
-- `index.html` : page d'accueil
-- `projects.html` : sélection de projets
-- `thinking.html` : réflexion / méthode
-- `project-*.html` : pages projet
-- `style.css` : styles globaux
-- `script.js` : menu mobile + switch FR/EN + animations
-- `profile-portrait.png` : photo de profil
+## Fichiers principaux
+- `index.html` : page d’accueil
+- `projects.html` : projets
+- `thinking.html` : réflexion
+- `project-*.html` : pages projets
+- `style.css` : design global
+- `script.js` : menu mobile, langue FR/EN, animations
+- `profile-portrait.png` : photo de profil utilisée sur la page d’accueil
 
-## Mise en ligne GitHub Pages
-Publiez tout le contenu du dossier à la racine du repo.
+## À personnaliser
+Remplacer `contact@example.com` et `linkedin.com/in/tonprofil` dans les fichiers HTML.
